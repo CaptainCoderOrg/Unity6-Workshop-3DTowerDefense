@@ -39,14 +39,12 @@
             "id": "9fcc4b17ff075bce",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Lessons/02 - Creating a Tile Grid.md",
-                "mode": "source",
-                "source": false
+                "file": "Lessons/images/03 - Creating Path and Obstacle Tiles/replace-prefab-inspector.webp"
               },
-              "icon": "lucide-file",
-              "title": "02 - Creating a Tile Grid"
+              "icon": "lucide-image",
+              "title": "replace-prefab-inspector"
             }
           },
           {
@@ -64,7 +62,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -207,21 +205,24 @@
       "obsidian-kanban:Create new board": false
     }
   },
-  "active": "6a686b4d4e3f1c85",
+  "active": "25d244e850a26219",
   "lastOpenFiles": [
-    "Lessons/02 - Creating a Tile Grid.md",
+    "Lessons/images/03 - Creating Path and Obstacle Tiles/replace-multiple-prefabs.webp",
+    "Lessons/images/03 - Creating Path and Obstacle Tiles/Example Finished Map.png",
     "Lessons/03 - Creating Path and Obstacle Tiles.md",
+    "Lessons/02 - Creating a Tile Grid.md",
+    "Lessons/images/03 - Creating Path and Obstacle Tiles/replace-prefab-inspector.webp",
+    "Lessons/images/03 - Creating Path and Obstacle Tiles/unpack-path-tile.webp",
+    "replace-prefab 1.webp",
+    "Lessons/images/03 - Creating Path and Obstacle Tiles/replace-prefab.webp",
+    "Lessons/images/03 - Creating Path and Obstacle Tiles/create-tiles-challenge.png",
+    "Lessons/images/03 - Creating Path and Obstacle Tiles/create-path-tile-prefab.webp",
+    "Lessons/images/03 - Creating Path and Obstacle Tiles",
     "Lessons/01 - Creating the Project.md",
     "Lessons/00 - Install Unity 6.md",
     "Lessons/images/02 - Creating a Tile Grid/apply-overrides-inspector.webp",
     "Lessons/images/02 - Creating a Tile Grid/change-to-snow-tile.webp",
-    "Lessons/images/02 - Creating a Tile Grid/enter-prefab-scene-editor.webp",
-    "Lessons/images/02 - Creating a Tile Grid/set-tile-dirt-model.webp",
-    "Lessons/images/02 - Creating a Tile Grid/verify-prefab-update.webp",
-    "Lessons/images/02 - Creating a Tile Grid/unpack-tile-model.webp",
-    "Lessons/images/02 - Creating a Tile Grid/open-prefab-editor.webp",
     "Lessons/03 - Design a Level.md",
-    "Downloads/kenney_tower-defense-kit/Preview.png",
     "Downloads/kenney_tower-defense-kit/Overview.html",
     "Downloads/kenney_tower-defense-kit/Models/FBX format/wood-structure.fbx",
     "Downloads/kenney_tower-defense-kit/Models/FBX format/wood-structure-part.fbx",
@@ -231,9 +232,6 @@
     "Downloads/kenney_tower-defense-kit/Models/FBX format/tower-square-roof-c.fbx",
     "Downloads/kenney_tower-defense-kit/Models/FBX format/tower-square-roof-b.fbx",
     "Downloads/kenney_tower-defense-kit/Models/FBX format/tower-square-roof-a.fbx",
-    "Downloads/kenney_tower-defense-kit/Models/FBX format/tower-square-middle-c.fbx",
-    "Lessons/images/02 - Creating a Tile Grid/challenge1-solution.png",
-    "Lessons/images/02 - Creating a Tile Grid/linear-on-z-axis.webp",
     "Lessons/images/02 - Creating a Tile Grid/Course Description.md",
     "2024-11-25.md",
     "Untitled.canvas",
