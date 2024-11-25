@@ -20,3 +20,9 @@ If something doesn't look quite right, you may want to set the **Layout** to the
 You can set the default layout from the top menu: **Windows > Layouts > Default**
 
 ![[UnitySetDefaultLayout.png]]
+
+## What's Next
+
+In the next section, you create a Tile Grid that will be used to create your map
+
+[[02 - Creating a Tile Grid]]

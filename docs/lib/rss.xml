@@ -1,0 +1,162 @@
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Tower Defense Course]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib\media\favicon.png</url><title>Tower Defense Course</title><link/></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Tue, 26 Nov 2024 13:55:31 GMT</lastBuildDate><atom:link href="lib\rss.xml" rel="self" type="application/rss+xml"/><pubDate>Tue, 26 Nov 2024 13:55:30 GMT</pubDate><copyright><![CDATA[Captain Coder]]></copyright><ttl>60</ttl><dc:creator>Captain Coder</dc:creator><item><title><![CDATA[00 - Install Unity 6]]></title><description><![CDATA[ 
+ <br>Before you can start this course, you will need to ensure you have the correct version of Unity installed. In this course, you will be using Unity 6 (version: 6000.0.XYZ), although many aspects of this project will likely work in later versions, no guarantees will be made by the author.<br><br>
+<br>In Unity Hub select the Installs tab on the left side of the interface. Then select Install Editor.
+<br><img alt="UnityHubInstalls.png" src="\lib\media\unityhubinstalls.png"><br>
+<br>
+Under Official releases locate the Unity 6 section and select a version that starts with 6000.0. Note: Anything that comes after 6000.0. is called a patch number and for our purposes we want to ensure that it ends with the letter f<br>
+<img alt="SelectUnity6000.0.png" src="\lib\media\selectunity6000.0.png">
+
+<br>
+Before clicking finalizing the Install be sure you add the WebGL Build Support module on the next screen. You will need to scroll through the available modules to find it. You do not need any other modules for this project.<br>
+<img alt="Unity6InstallWebGLBuildSupport.png" src="\lib\media\unity6installwebglbuildsupport.png">
+
+<br>If all went well, the Editor application and WebGL  Build Support module will download and install. Depending on your internet connection speed and your computer's processor speed, this can take anywhere from 5 minutes to 1 hour to complete (longer for slower internet connections).<br>
+<img alt="Unity6DownloadInProgress.png" src="\lib\media\unity6downloadinprogress.png"><br>
+Note: After the download has finished, the installer will prompt you to finish the installation. You may need the password you use to log into your computer to finish this step. If you encounter any issues, do not hesitate to contact your instructor.<br>After the install is complete, you should see an Install complete message and a green check mark next to Editor application and WebGL Build Support. If you do not see this, contact your instructor for additional help.<br><img alt="Unity6DownloadComplete.png" src="\lib\media\unity6downloadcomplete.png"><br><br>In the next section, you will create a new Unity 6 project<br><a data-href="01 - Creating the Project" href="\lessons\01-creating-the-project.html" class="internal-link" target="_self" rel="noopener nofollow">01 - Creating the Project</a>]]></description><link>lessons\00-install-unity-6.html</link><guid isPermaLink="false">Lessons/00 - Install Unity 6.md</guid><dc:creator><![CDATA[Captain Coder]]></dc:creator><pubDate>Tue, 26 Nov 2024 03:33:04 GMT</pubDate><enclosure url="lib\media\unityhubinstalls.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="lib\media\unityhubinstalls.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[01 - Creating the Project]]></title><description><![CDATA[ 
+ <br><br>Before starting, you will need to create a new Unity 6 project. The picture below shows the settings you should select when creating the project.<br>
+<br>Ensure the editor version begins with 6000.0.
+<br>Ensure you are using the Universal 3D Core template 
+
+<br>(DO NOT USE High Definition 3D you will not be able to publish your project if you choose this setting)
+
+
+<br>Name your project (I recommend naming it Tower Defense)
+<br>You do not need to connect to Unity Cloud or Unity Version Control you can unselect these options.<br>
+<img alt="UnityHubProjectSettings.png" src="\lib\media\unityhubprojectsettings.png">
+<br>After selecting Create project you should see the Unity Engine window (similar to the one below). The first time you initialize a project, it may take several minutes depending on the speed of your computer.<br><img alt="UnityEngineInitializing.png" src="\lib\media\unityengineinitializing.png"><br>If all went well, you should see the default Unity project displayed. It should be similar to the image below:<br><img alt="DefaultProjectInitialized.png" src="\lib\media\defaultprojectinitialized.png"><br>If something doesn't look quite right, you may want to set the Layout to the default view. For the majority of this course, the screenshot will be using the default layout.<br>You can set the default layout from the top menu: Windows &gt; Layouts &gt; Default<br><img alt="UnitySetDefaultLayout.png" src="\lib\media\unitysetdefaultlayout.png"><br><br>In the next section, you create a Tile Grid that will be used to create your map<br><a data-href="02 - Creating a Tile Grid" href="\lessons\02-creating-a-tile-grid.html" class="internal-link" target="_self" rel="noopener nofollow">02 - Creating a Tile Grid</a>]]></description><link>lessons\01-creating-the-project.html</link><guid isPermaLink="false">Lessons/01 - Creating the Project.md</guid><dc:creator><![CDATA[Captain Coder]]></dc:creator><pubDate>Tue, 26 Nov 2024 03:33:04 GMT</pubDate><enclosure url="lib\media\unityhubprojectsettings.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="lib\media\unityhubprojectsettings.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[02 - Creating a Tile Grid]]></title><description><![CDATA[ 
+ <br>0:000:00/0:00<br><br>
+<br>Download Kenney's Tower Defense Kit: <a rel="noopener nofollow" class="external-link" href="https://kenney.nl/assets/tower-defense-kit" target="_blank">https://kenney.nl/assets/tower-defense-kit</a>
+<br>Extract the archived zip file
+<br><img alt="ExtractFile.png" src="\lib\media\extractfile.png"><br>
+<br>Within the extracted folder find the open the Models folder and open it<br>
+<img alt="find-models.webp" src="\lib\media\find-models.webp">
+<br>Import the FBX format folder into your Assets folder<br>
+<img alt="import-fbx-format.webp" src="\lib\media\import-fbx-format.webp">
+<br>Rename the folder. I recommend calling it Kenney Tower Defense Kit Models<br>
+<img alt="rename-folder.webp" src="\lib\media\rename-folder.webp">
+<br><br>
+<br>Navigate to the Tower Defense Kit Models in folder in Unity's Project explorer
+<br>Note: You can adjust the size of the preview by using the slider in the bottom right corner of the Project Explorer tab.<br><img alt="resize-project-preview-size.webp" src="\lib\media\resize-project-preview-size.webp"><br>
+<br>Find the tile model and drag it into the scene
+<br><img alt="add-tile-fbx-to-scene.webp" src="\lib\media\add-tile-fbx-to-scene.webp"><br><br>Before you add any more tiles to the scene, you should parent the tile model and create a Prefab to represent your tile. This will be useful if you decide to change the tile later (and you will).<br>
+<br>Right click on the tile object in the Hierarchy and select Create Empty Parent this will create a new Game Object with the tile as a child.
+<br><img alt="create-parent.webp" src="\lib\media\create-parent.webp"><br>
+<br>Rename the parent object. I recommend calling it Tile
+<br>Now that you have a Tile Game Object, that will be the basis of each cell of your map, it is time to turn it into a reusable Prefab. To create a Prefab from an existing object, drag that object from the Hierarchy into your Project tab.<br>
+<br>Drag your Tile Game Object into your Assets folder.
+<br><img alt="create-prefab.webp" src="\lib\media\create-prefab.webp"><br>You'll notice that the Game Object in the Hierarchy is now appears in blue and has a small arrow &gt; on the right side of the Hierarchy. This tells you that this Game Object is using a Prefab.<br><img alt="notice-prefab.png" src="\lib\media\notice-prefab.png"><br>Note: You should use a Prefab any time you plan to use the same Game Object in multiple places (e.g., enemies, structures, UI elements). Most projects have many Prefabs and as such, it typically makes sense to create a folder to hold them.<br>
+<br>Create a Prefabs folder in your Assets folder
+<br>Move the Tile Prefab into your Prefabs folder
+<br><img alt="create-prefabs-folder.webp" src="\lib\media\create-prefabs-folder.webp"><br><br>For this game, you will need to create a grid of Tile Game Objects that are aligned perfectly on the X, Y, and Z axis. This can be quite difficult and tedious to do even with just two Tiles! Try it.<br>
+<br>Add a second Tile Prefab to your Hierarchy
+<br>Try to align the new Tile perfectly on the X, Y, and Z axis with the existing tile so they are adjacent.
+<br><img alt="try-to-align.webp" src="\lib\media\try-to-align.webp"><br>You may have found it very difficult to perfectly align the two tiles, especially using the mouse! One option to align them perfectly is to use the inspector to se them to be exactly 1 unit apart (the tiles happen to be 1 Unity unit on the X and Z axis! LUCKY YOU!)<br>
+<br>Use the Inspector to adjust the Tile positions to be perfectly spaced 1 unit apart on the X or Z axis
+<br><img alt="perfect-alignment-with-inspector.webp" src="\lib\media\perfect-alignment-with-inspector.webp"><br><br>Using the above process, can you create a perfectly aligned 3x3 grid of Tiles?<br>
+<br>Create 9 Tile prefabs
+<br>Move the Tiles into a parent object named Grid
+<br>Perfectly align each Tile such that they form a 3x3 grid with no overlapping edges and no visible seams
+<br>When you are finished, your Hierarchy and Scene view should look similar to the image below:<br><img alt="challenge1-solution.png" src="\lib\media\challenge1-solution.png"><br><br>After completing the previous challenge, you might be realizing how difficult, tedious, and painful it is going to be to create a large grid for your game in this manner. When you find yourself performing a repetitive task, it is often beneficial to seek if an automated solution exists and if it does not exists, create one.<br>In this case, there exists a partially automated solution (later you will create a fully automated solution).<br><br>You will often want to place Game Objects at an evenly spaced distance. This can be quickly don by using Unity's Linear Spacing Syntax. This allows you to specify a starting position and an ending position for a set of objects and Unity will automagically space the objects between those positions.<br>
+<br>Create 1 more Tile so you have a total of 10 tiles
+<br>Select all 10 Tile objects in the inspector
+
+<br>Note: You can select multiple objects by holding Shift while clicking. This will select all of the objects between the first object clicked and the last object clicked.
+<br>Note: You can add or remove a single object to a selection by holding Ctrl/Command and clicking on the object
+
+
+<br>Set all of the Tiles positions to 0, 0, 0 in the inspector.
+<br>In the X Position editor, type L(0, 9)
+<br><img alt="linear-on-10-objects.webp" src="\lib\media\linear-on-10-objects.webp"><br>At this point, you should have 10 Tile objects spaced perfectly in a single row. Next, you need to create 10 rows that are evenly spaced.<br>
+<br>Select your 10 Tiles and put them into an Empty Parent Object
+<br>Rename the parent (I recommend calling it a row)
+<br>Duplicate your row such that you have 10 rows
+
+<br>Note: Ctrl+D/Command+D will duplicate the selected Game Object 
+
+
+<br>Use Linear Spacing Syntax to place the rows evenly on the Z axis between 0 and 9
+<br><img alt="linear-on-z-axis.webp" src="\lib\media\linear-on-z-axis.webp"><br><br>Earlier in the lesson, you created a Tile Prefab. One of the major benefits of using a Prefab is the ability to change all Game Objects that use that Prefab throughout your project by modifying the original.<br>Double clicking on a Prefab asset in the Project explorer will open it in the Scene tab where it can be edited. You can exit the Prefab editor by clicking the &lt; near the top of the Hierarchy. <br><img alt="open-prefab-editor.webp" src="\lib\media\open-prefab-editor.webp"><br>
+<br>Open your Tile Prefab
+<br>You may have noticed that the tile model you previously added to the Tile object is a prefab! Recall that you can easily identify prefab game objects by their blue color in the Inspector.<br>Some times, it is useful to unpack a prefab object to separate it from the parent Prefab. This can be done by right clicking on the Game Object in the Hierarchy and selecting Prefab &gt; Unpack. When you do this, it disconnects it from the prefab such that it won't update if the original prefab changes. Because some of your Tiles will use different models, you will want disconnect the tile Prefab to allow the model to be changed.<br>
+<br>Completely Unpack the tile object
+<br>Rename the tile object to be more generalized (I recommend model)
+<br><img alt="unpack-tile-model.webp" src="\lib\media\unpack-tile-model.webp"><br>With the child object renamed, you can verify that all of your Tile Prefabs have changed exiting the Prefab Scene and opening your Tile objects.<br>
+<br>Verify that your Prefabs have updated
+<br><img alt="verify-prefab-update.webp" src="\lib\media\verify-prefab-update.webp"><br>You will often want to make changes to a single instance of a Prefab. For example, you will want to change some of your tiles to use a different model. This can be done by editing the Game Object directly in the Scene view's Hierarchy / Inspector.<br>In this case, you want to adjust some of your Tiles to use a different mesh. This can be set on the model Game Object's Mesh Filter. In the Inspector you can click the small circle next to the Mesh field to see all mesh assets in your project that can be set.<br>
+<br>Select a Tile in your Scene
+<br>Select the model child Game Object
+<br>Update the Mesh of the model Game Object to be tile-dirt
+<br><img alt="set-tile-dirt-model.webp" src="\lib\media\set-tile-dirt-model.webp"><br>By clicking the &gt; button to the right of a Prefab in the Hierarchy, you can edit a Prefab in the Scene view. When you do this, all elements in the Scene view that are not apart of the selected object will be shown in grey scale indicating that you cannot interact with them in the Hierarchy.<br>
+<br>Select a Tile in the Inspector
+<br>Click the &gt; button to enter the Prefab editor within the Scene
+<br><img alt="enter-prefab-scene-editor.webp" src="\lib\media\enter-prefab-scene-editor.webp"><br>While editing the Tile Prefab while in the Scene view, you can observe the changes live.<br>
+<br>Change the Tile Prefab's the Mesh property to be snow-tile
+<br>Exit the Prefab editor
+<br><img alt="change-to-snow-tile.webp" src="\lib\media\change-to-snow-tile.webp"><br>One thing to note is that the Prefab that you previously modified in the Hierarchy did not change. This is because the Mesh property has been overridden. You can see all Overrides for a Game Object in the Inspector by selecting the Overrides drop down. Additionally, if you can Revert those changes to the Prefab's current setting or Apply those changes to the Prefab to propagate the change throughout your project.<br>
+<br>Select the Tile that is different
+<br>In the Inspector find the Overrides drop down
+<br>Select Apply All to change all of the Tile Prefabs to use the dirt mesh
+<br><img alt="apply-overrides-inspector.webp" src="\lib\media\apply-overrides-inspector.webp"><br><br>Practice editing prefabs by setting the Tile Prefab to use a different mesh using each of the methods described above<br>
+<br>Edit the Prefab directly
+<br>Edit a Tile using the Scene prefab editor
+<br>Modify a Tile then Apply the Override to all prefabs
+<br>Before continuing, update your Tile Prefab to use the tile mesh. This particular Prefab will be used as an empty tile where the player can build a structure.<br><br>In the next section, you will create several more Prefabs that you will use to build a more detailed map<br><a data-href="03 - Creating Additional Tile Prefabs" href="\lessons\03-creating-additional-tile-prefabs.html" class="internal-link" target="_self" rel="noopener nofollow">03 - Creating Additional Tile Prefabs</a>]]></description><link>lessons\02-creating-a-tile-grid.html</link><guid isPermaLink="false">Lessons/02 - Creating a Tile Grid.md</guid><dc:creator><![CDATA[Captain Coder]]></dc:creator><pubDate>Tue, 26 Nov 2024 13:53:36 GMT</pubDate><enclosure url="lib\media\extractfile.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="lib\media\extractfile.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[03 - Creating Additional Tile Prefabs]]></title><description><![CDATA[ 
+ <br>Before you can design your first level, you will need to create a few more Prefabs that will be used on your Grid in place of the empty Tile.<br><br>Start by changing the Mesh of a Tile in your scene to use the tile-dirt mesh.<br>
+<br>Select a Tile in your Scene
+<br>Change the Mesh property of the selected tile to tile-dirt
+<br><img alt="set-tile-dirt-model.webp" src="\lib\media\set-tile-dirt-model.webp"><br>This Game Object will be the basis for a **Path Tile Prefab.<br>
+<br>Select the modified Tile in the Inspector
+<br>Unpack Completely so it is no longer attached to the Tile Prefab
+<br>Rename the Game Object. (I recommend calling it Path Tile)
+<br><img alt="unpack-path-tile.webp" src="\lib\media\unpack-path-tile.webp"><br>
+<br>Drag the Path Tile into your Prefabs folder to change it to a new Prefab
+<br><img alt="create-path-tile-prefab.webp" src="\lib\media\create-path-tile-prefab.webp"><br><br>Practice unpacking and creating a few more prefabs<br>
+<br>Create a Tree Tile using the tile-tree mesh
+<br>Create a Rock Tile using the tile-rock mesh
+<br>Create a Crystal Tile using the tile-crystal mesh
+<br>When you have finished, you should have 5 Tile Prefabs that look similar to the ones picture in the image below.<br><img alt="create-tiles-challenge.png" src="\lib\media\create-tiles-challenge.png"><br><br>It is possible to swap out a Prefab for another quickly in the Hierarchy by right clicking on Prefab and selecting Prefab &gt; Replace.<br>
+<br>Select a Tile you would like to change to a Path Tile
+<br>Right click on it in the Inspector
+<br>Select Prefab &gt; Replace
+<br>Search for and select the Path Tile prefab
+<br><img alt="replace-prefab.webp" src="\lib\media\replace-prefab.webp"><br>You can also replace a Prefab from the Inspector.<br>
+<br>Select a Tile you would like to be a path
+<br>In the Inspector click the circle next to the Prefab value
+<br>Search for and select the Path Tile Prefab
+<br><img alt="replace-prefab-inspector.webp" src="\lib\media\replace-prefab-inspector.webp"><br>Changing a Prefab from the Inspector is particularly useful if you would like to change several Game Objects at the same time.<br>
+<br>Select several Tiles that you would like to be a path
+
+<br>Hold Ctrl/Command while clicking in the Scene to add or remove a game object to your selection.
+
+
+<br>In the Inspector click the circle next to the Multiple value
+
+<br>Note: The Prefab word changes to Multiple if you have several objects selected
+
+
+<br>Search for and select the Path Tile Prefab
+<br><img alt="replace-multiple-prefabs.webp" src="\lib\media\replace-multiple-prefabs.webp"><br><br>With everything you've learned so far, it is now time to design a map for your first level! <br>
+<br>Your tile grid should be 15x15
+
+<br>Note: Odd length sides will result in a "center" tile
+
+
+<br>Your level should use at least 5 different types of tiles
+<br>Your level should have one continuous path from the edge of the map to an "end" location, eventually your Player's tower will be placed here. 
+<br>Bonus: Share a screenshot of your Map with a friend!
+<br>When you're finished, your map might look something like the image below:<br><img alt="Example Finished Map.png" src="\lib\media\example-finished-map.png">]]></description><link>lessons\03-creating-additional-tile-prefabs.html</link><guid isPermaLink="false">Lessons/03 - Creating Additional Tile Prefabs.md</guid><dc:creator><![CDATA[Captain Coder]]></dc:creator><pubDate>Tue, 26 Nov 2024 03:33:04 GMT</pubDate><enclosure url="lib\media\set-tile-dirt-model.webp" length="0" type="image/webp"/><content:encoded>&lt;figure&gt;&lt;img src="lib\media\set-tile-dirt-model.webp"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Unity Workshop - 3D Tower Defense]]></title><description><![CDATA[ 
+ <br><br>Take your Unity and C# skills to the next level with this hands-on workshop, designed for aspiring game developers who want to create their own 3D Tower Defense game. This course builds on your foundational knowledge of Unity and programming, focusing on practical application, advanced Unity concepts, and user-centric game design.<br><br>
+<br>Completion of at least one introductory Unity course.
+<br>Completion of at least one C# course or willingness to complete a programming proficiency project before the second week  of class.
+<br><br>
+<br>Unity's Script Lifecycle: Gain understanding of Unity’s foundational structure by leveraging key lifecycle methods like Awake, OnEnable, Start, OnMouseEvents, Update, OnDisable, and OnDestroy.
+<br>MonoBehaviour, ScriptableObject, and Prefabs: Understand and utilize these core Unity elements to create flexible, reusable, and scalable game architecture. 
+<br>Custom Editor Extensions: Learn to create custom Gizmos and Editor drawers to enhance your game development workflow.
+<br>User Experience Design: Explore strategies for crafting player-friendly experiences, ensuring your game is both engaging and easy to learn.
+<br><br>
+<br><a data-href="00 - Install Unity 6" href="\lessons\00-install-unity-6.html" class="internal-link" target="_self" rel="noopener nofollow">00 - Install Unity 6</a> 
+<br><a data-href="01 - Creating the Project" href="\lessons\01-creating-the-project.html" class="internal-link" target="_self" rel="noopener nofollow">01 - Creating the Project</a>
+<br><a data-href="02 - Creating a Tile Grid" href="\lessons\02-creating-a-tile-grid.html" class="internal-link" target="_self" rel="noopener nofollow">02 - Creating a Tile Grid</a>
+<br><a data-href="03 - Creating Additional Tile Prefabs" href="\lessons\03-creating-additional-tile-prefabs.html" class="internal-link" target="_self" rel="noopener nofollow">03 - Creating Additional Tile Prefabs</a>
+<br>
+]]></description><link>index.html</link><guid isPermaLink="false">Index.md</guid><dc:creator><![CDATA[Captain Coder]]></dc:creator><pubDate>Tue, 26 Nov 2024 03:33:04 GMT</pubDate></item></channel></rss>

@@ -19,3 +19,9 @@ If all went well, the **Editor application** and **WebGL  Build Support** module
 After the install is complete, you should see an **Install complete** message and a green check mark next to **Editor application** and **WebGL Build Support**. If you do not see this, contact your instructor for additional help.
 
 ![[Unity6DownloadComplete.png]]
+
+## What's Next
+
+In the next section, you will create a new Unity 6 project
+
+[[01 - Creating the Project]]

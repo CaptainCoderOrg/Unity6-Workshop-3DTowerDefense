@@ -39,12 +39,14 @@
             "id": "9fcc4b17ff075bce",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "Lessons/images/03 - Creating Path and Obstacle Tiles/replace-prefab-inspector.webp"
+                "file": "Lessons/03 - Creating Additional Tile Prefabs.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "replace-prefab-inspector"
+              "icon": "lucide-file",
+              "title": "03 - Creating Additional Tile Prefabs"
             }
           },
           {
@@ -53,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Lessons/03 - Creating Path and Obstacle Tiles.md",
+                "file": "Lessons/03 - Creating Additional Tile Prefabs.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "03 - Creating Path and Obstacle Tiles"
+              "title": "03 - Creating Additional Tile Prefabs"
             }
           }
         ],
@@ -93,7 +95,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "course description",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -173,7 +175,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TODO Kanban.md",
+                "file": "Index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -183,7 +185,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for TODO Kanban"
+              "title": "Backlinks for Index"
             }
           }
         ],
@@ -202,26 +204,32 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "obsidian-kanban:Create new board": false
+      "obsidian-kanban:Create new board": false,
+      "webpage-html-export:Export Vault to HTML": false,
+      "media-extended:Open media": false
     }
   },
-  "active": "25d244e850a26219",
+  "active": "9fcc4b17ff075bce",
   "lastOpenFiles": [
-    "Lessons/images/03 - Creating Path and Obstacle Tiles/replace-multiple-prefabs.webp",
-    "Lessons/images/03 - Creating Path and Obstacle Tiles/Example Finished Map.png",
-    "Lessons/03 - Creating Path and Obstacle Tiles.md",
     "Lessons/02 - Creating a Tile Grid.md",
-    "Lessons/images/03 - Creating Path and Obstacle Tiles/replace-prefab-inspector.webp",
-    "Lessons/images/03 - Creating Path and Obstacle Tiles/unpack-path-tile.webp",
-    "replace-prefab 1.webp",
-    "Lessons/images/03 - Creating Path and Obstacle Tiles/replace-prefab.webp",
-    "Lessons/images/03 - Creating Path and Obstacle Tiles/create-tiles-challenge.png",
-    "Lessons/images/03 - Creating Path and Obstacle Tiles/create-path-tile-prefab.webp",
-    "Lessons/images/03 - Creating Path and Obstacle Tiles",
+    "Lessons/03 - Creating Additional Tile Prefabs.md",
+    "Index.md",
     "Lessons/01 - Creating the Project.md",
     "Lessons/00 - Install Unity 6.md",
-    "Lessons/images/02 - Creating a Tile Grid/apply-overrides-inspector.webp",
-    "Lessons/images/02 - Creating a Tile Grid/change-to-snow-tile.webp",
+    "TODO Kanban.md",
+    "Unity Manual Links.md",
+    "2024-11-25.md",
+    "assets/03 - Creating Path and Obstacle Tiles/replace-prefab-inspector.webp",
+    "assets/03 - Creating Path and Obstacle Tiles/replace-multiple-prefabs.webp",
+    "assets/03 - Creating Path and Obstacle Tiles/Example Finished Map.png",
+    "assets/03 - Creating Path and Obstacle Tiles/unpack-path-tile.webp",
+    "replace-prefab 1.webp",
+    "assets/03 - Creating Path and Obstacle Tiles/replace-prefab.webp",
+    "assets/03 - Creating Path and Obstacle Tiles/create-tiles-challenge.png",
+    "assets/03 - Creating Path and Obstacle Tiles/create-path-tile-prefab.webp",
+    "assets/03 - Creating Path and Obstacle Tiles",
+    "assets/02 - Creating a Tile Grid/apply-overrides-inspector.webp",
+    "assets/02 - Creating a Tile Grid/change-to-snow-tile.webp",
     "Lessons/03 - Design a Level.md",
     "Downloads/kenney_tower-defense-kit/Overview.html",
     "Downloads/kenney_tower-defense-kit/Models/FBX format/wood-structure.fbx",
@@ -232,11 +240,7 @@
     "Downloads/kenney_tower-defense-kit/Models/FBX format/tower-square-roof-c.fbx",
     "Downloads/kenney_tower-defense-kit/Models/FBX format/tower-square-roof-b.fbx",
     "Downloads/kenney_tower-defense-kit/Models/FBX format/tower-square-roof-a.fbx",
-    "Lessons/images/02 - Creating a Tile Grid/Course Description.md",
-    "2024-11-25.md",
     "Untitled.canvas",
-    "TODO Kanban.md",
-    "Unity Manual Links.md",
     "Untitled Kanban.md",
     "Untitled 1.canvas",
     "TO DO.md",

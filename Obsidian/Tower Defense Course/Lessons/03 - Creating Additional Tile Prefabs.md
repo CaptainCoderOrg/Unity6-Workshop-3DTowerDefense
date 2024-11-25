@@ -1,3 +1,5 @@
+* Video: [LINK](https://youtu.be/HqbWWXe45LM?si=GJe-BL-USb6s42kp)
+
 Before you can design your first level, you will need to create a few more **Prefab**s that will be used on your Grid in place of the empty **Tile**.
 
 ## Path Tile Prefab

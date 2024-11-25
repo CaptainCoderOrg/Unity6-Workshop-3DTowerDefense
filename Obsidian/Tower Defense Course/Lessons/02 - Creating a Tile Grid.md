@@ -1,3 +1,4 @@
+* Video: [LINK](https://youtu.be/2rXo9YYaTxA?si=ARJHVNp9OYDIVND6)
 ## Importing Assets
 
 - [ ] Download Kenney's Tower Defense Kit: https://kenney.nl/assets/tower-defense-kit
@@ -167,3 +168,9 @@ Practice editing prefabs by setting the **Tile Prefab** to use a different mesh 
 - [ ] Modify a **Tile** then **Apply** the **Override** to all prefabs
 
 Before continuing, update your **Tile Prefab** to use the `tile` mesh. This particular **Prefab** will be used as an empty tile where the player can build a structure.
+
+## What's Next
+
+In the next section, you will create several more **Prefabs** that you will use to build a more detailed map
+
+[[03 - Creating Additional Tile Prefabs]]

@@ -11,3 +11,11 @@ Take your Unity and C# skills to the next level with this hands-on workshop, des
 - **MonoBehaviour, ScriptableObject, and Prefabs**: Understand and utilize these core Unity elements to create flexible, reusable, and scalable game architecture. 
 - **Custom Editor Extensions:** Learn to create custom Gizmos and Editor drawers to enhance your game development workflow.
 - **User Experience Design:** Explore strategies for crafting player-friendly experiences, ensuring your game is both engaging and easy to learn.
+
+## Lessons
+
+* [[00 - Install Unity 6]] 
+* [[01 - Creating the Project]]
+* [[02 - Creating a Tile Grid]]
+* [[03 - Creating Additional Tile Prefabs]]
+* 

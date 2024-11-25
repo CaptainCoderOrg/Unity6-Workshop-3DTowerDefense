@@ -1117,19 +1117,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3908192525353767444, guid: 2168e6f1554d33d43bf2a3ef2e597e6b, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 3908192525353767444, guid: 2168e6f1554d33d43bf2a3ef2e597e6b, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3908192525353767444, guid: 2168e6f1554d33d43bf2a3ef2e597e6b, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 3908192525353767444, guid: 2168e6f1554d33d43bf2a3ef2e597e6b, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3908192525353767444, guid: 2168e6f1554d33d43bf2a3ef2e597e6b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1137,7 +1137,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3908192525353767444, guid: 2168e6f1554d33d43bf2a3ef2e597e6b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 3908192525353767444, guid: 2168e6f1554d33d43bf2a3ef2e597e6b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -1769,6 +1769,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1599862142}
     m_Modifications:
+    - target: {fileID: 7254458963718828853, guid: c879867bf0fc57b4eb30e3220201fe5a, type: 3}
+      propertyPath: m_Name
+      value: Crystal Tile
+      objectReference: {fileID: 0}
     - target: {fileID: 8567847084936661604, guid: c879867bf0fc57b4eb30e3220201fe5a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 6
@@ -1783,19 +1787,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8567847084936661604, guid: c879867bf0fc57b4eb30e3220201fe5a, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 8567847084936661604, guid: c879867bf0fc57b4eb30e3220201fe5a, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8567847084936661604, guid: c879867bf0fc57b4eb30e3220201fe5a, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 8567847084936661604, guid: c879867bf0fc57b4eb30e3220201fe5a, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8567847084936661604, guid: c879867bf0fc57b4eb30e3220201fe5a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1803,15 +1807,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8567847084936661604, guid: c879867bf0fc57b4eb30e3220201fe5a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 8567847084936661604, guid: c879867bf0fc57b4eb30e3220201fe5a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7254458963718828853, guid: c879867bf0fc57b4eb30e3220201fe5a, type: 3}
-      propertyPath: m_Name
-      value: Crystal Tile
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3683,6 +3683,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 318540542}
     m_Modifications:
+    - target: {fileID: 3405270538415946652, guid: 3dc3c9baa167dc94994910c165e5cec5, type: 3}
+      propertyPath: m_Name
+      value: Rock Tile
+      objectReference: {fileID: 0}
     - target: {fileID: 6932016947113871474, guid: 3dc3c9baa167dc94994910c165e5cec5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 14
@@ -3722,10 +3726,6 @@ PrefabInstance:
     - target: {fileID: 6932016947113871474, guid: 3dc3c9baa167dc94994910c165e5cec5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3405270538415946652, guid: 3dc3c9baa167dc94994910c165e5cec5, type: 3}
-      propertyPath: m_Name
-      value: Rock Tile
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8148,6 +8148,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1324889696}
     m_Modifications:
+    - target: {fileID: 3405270538415946652, guid: 3dc3c9baa167dc94994910c165e5cec5, type: 3}
+      propertyPath: m_Name
+      value: Rock Tile
+      objectReference: {fileID: 0}
     - target: {fileID: 6932016947113871474, guid: 3dc3c9baa167dc94994910c165e5cec5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -8187,10 +8191,6 @@ PrefabInstance:
     - target: {fileID: 6932016947113871474, guid: 3dc3c9baa167dc94994910c165e5cec5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3405270538415946652, guid: 3dc3c9baa167dc94994910c165e5cec5, type: 3}
-      propertyPath: m_Name
-      value: Rock Tile
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9450,6 +9450,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 318540542}
     m_Modifications:
+    - target: {fileID: 7254458963718828853, guid: c879867bf0fc57b4eb30e3220201fe5a, type: 3}
+      propertyPath: m_Name
+      value: Crystal Tile
+      objectReference: {fileID: 0}
     - target: {fileID: 8567847084936661604, guid: c879867bf0fc57b4eb30e3220201fe5a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5
@@ -9489,10 +9493,6 @@ PrefabInstance:
     - target: {fileID: 8567847084936661604, guid: c879867bf0fc57b4eb30e3220201fe5a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7254458963718828853, guid: c879867bf0fc57b4eb30e3220201fe5a, type: 3}
-      propertyPath: m_Name
-      value: Crystal Tile
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12842,6 +12842,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 501485170}
     m_Modifications:
+    - target: {fileID: 3405270538415946652, guid: 3dc3c9baa167dc94994910c165e5cec5, type: 3}
+      propertyPath: m_Name
+      value: Rock Tile
+      objectReference: {fileID: 0}
     - target: {fileID: 6932016947113871474, guid: 3dc3c9baa167dc94994910c165e5cec5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 11
@@ -12881,10 +12885,6 @@ PrefabInstance:
     - target: {fileID: 6932016947113871474, guid: 3dc3c9baa167dc94994910c165e5cec5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3405270538415946652, guid: 3dc3c9baa167dc94994910c165e5cec5, type: 3}
-      propertyPath: m_Name
-      value: Rock Tile
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13894,19 +13894,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3515527241211220065, guid: 4abd8c1896f7c4a47895ea448f53dcdb, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 3515527241211220065, guid: 4abd8c1896f7c4a47895ea448f53dcdb, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3515527241211220065, guid: 4abd8c1896f7c4a47895ea448f53dcdb, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 3515527241211220065, guid: 4abd8c1896f7c4a47895ea448f53dcdb, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3515527241211220065, guid: 4abd8c1896f7c4a47895ea448f53dcdb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -13914,7 +13914,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3515527241211220065, guid: 4abd8c1896f7c4a47895ea448f53dcdb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 3515527241211220065, guid: 4abd8c1896f7c4a47895ea448f53dcdb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -15058,6 +15058,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1324889696}
     m_Modifications:
+    - target: {fileID: 7254458963718828853, guid: c879867bf0fc57b4eb30e3220201fe5a, type: 3}
+      propertyPath: m_Name
+      value: Crystal Tile
+      objectReference: {fileID: 0}
     - target: {fileID: 8567847084936661604, guid: c879867bf0fc57b4eb30e3220201fe5a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 14
@@ -15072,19 +15076,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8567847084936661604, guid: c879867bf0fc57b4eb30e3220201fe5a, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8567847084936661604, guid: c879867bf0fc57b4eb30e3220201fe5a, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8567847084936661604, guid: c879867bf0fc57b4eb30e3220201fe5a, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8567847084936661604, guid: c879867bf0fc57b4eb30e3220201fe5a, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8567847084936661604, guid: c879867bf0fc57b4eb30e3220201fe5a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -15092,15 +15096,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8567847084936661604, guid: c879867bf0fc57b4eb30e3220201fe5a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 180
       objectReference: {fileID: 0}
     - target: {fileID: 8567847084936661604, guid: c879867bf0fc57b4eb30e3220201fe5a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7254458963718828853, guid: c879867bf0fc57b4eb30e3220201fe5a, type: 3}
-      propertyPath: m_Name
-      value: Crystal Tile
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
