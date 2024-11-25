@@ -77,7 +77,7 @@ When you are finished, your **Hierarchy** and **Scene** view should look similar
 
 After completing the previous challenge, you might be realizing how difficult, tedious, and painful it is going to be to create a large grid for your game in this manner. When you find yourself performing a repetitive task, it is often beneficial to seek if an automated solution exists and if it does not exists, create one.
 
-In this case, there exists a partially automated solution (later we will create a fully automated solution).
+In this case, there exists a partially automated solution (later you will create a fully automated solution).
 
 ### Using Unity's Linear Spacing Syntax
 
@@ -102,3 +102,68 @@ At this point, you should have 10 **Tile** objects spaced perfectly in a single 
 
 ![[linear-on-z-axis.webp]]
 
+## Changing the Tile Prefab's Model
+
+Earlier in the lesson, you created a **Tile** **Prefab**. One of the major benefits of using a **Prefab** is the ability to change all **Game Objects** that use that **Prefab** throughout your project by modifying the original.
+
+Double clicking on a **Prefab** asset in the **Project** explorer will open it in the **Scene** tab where it can be edited. You can exit the **Prefab** editor by clicking the `<` near the top of the **Hierarchy**. 
+
+![[open-prefab-editor.webp]]
+
+- [ ] Open your **Tile** **Prefab**
+
+You may have noticed that the `tile` model you previously added to the `Tile` object is a prefab! Recall that you can easily identify prefab game objects by their blue color in the **Inspector**.
+
+Some times, it is useful to unpack a prefab object to separate it from the parent **Prefab**. This can be done by right clicking on the **Game Object** in the **Hierarchy** and selecting **Prefab > Unpack**. When you do this, it disconnects it from the prefab such that it won't update if the original prefab changes. Because some of your **Tile**s will use different models, you will want disconnect the **tile** **Prefab** to allow the model to be changed.
+
+- [ ] Completely Unpack the `tile` object
+- [ ] Rename the `tile` object to be more generalized (I recommend `model`)
+
+![[unpack-tile-model.webp]]
+
+With the child object renamed, you can verify that all of your **Tile** **Prefab**s have changed exiting the **Prefab Scene** and opening your **Tile** objects.
+
+- [ ] Verify that your **Prefab**s have updated
+
+![[verify-prefab-update.webp]]
+
+You will often want to make changes to a single instance of a **Prefab**. For example, you will want to change some of your tiles to use a different model. This can be done by editing the **Game Object** directly in the **Scene** view's **Hierarchy / Inspector**.
+
+In this case, you want to adjust some of your **Tile**s to use a different **mesh**. This can be set on the `model` **Game Object**'s `Mesh Filter`. In the **Inspector** you can click the small circle next to the `Mesh` field to see all `mesh` assets in your project that can be set.
+
+- [ ] Select a **Tile** in your **Scene**
+- [ ] Select the **model** child **Game Object**
+- [ ] Update the `Mesh` of the `model` **Game Object** to be `tile-dirt`
+
+![[set-tile-dirt-model.webp]]
+
+By clicking the `>` button to the right of a **Prefab** in the **Hierarchy**, you can edit a **Prefab** in the **Scene** view. When you do this, all elements in the **Scene** view that are not apart of the selected object will be shown in grey scale indicating that you cannot interact with them in the **Hierarchy**.
+
+- [ ] Select a **Tile** in the **Inspector**
+- [ ] Click the `>` button to enter the **Prefab** editor within the **Scene**
+
+![[enter-prefab-scene-editor.webp]]
+
+While editing the **Tile Prefab** while in the **Scene** view, you can observe the changes live.
+
+- [ ] Change the **Tile Prefab's** the `Mesh` property to be `snow-tile`
+- [ ] Exit the **Prefab** editor
+
+![[change-to-snow-tile.webp]]
+
+One thing to note is that the **Prefab** that you previously modified in the **Hierarchy** did not change. This is because the `Mesh` property has been overridden. You can see all **Overrides** for a **Game Object** in the **Inspector** by selecting the **Overrides** drop down. Additionally, if you can **Revert** those changes to the **Prefab**'s current setting or **Apply** those changes to the **Prefab** to propagate the change throughout your project.
+
+- [ ] Select the **Tile** that is different
+- [ ] In the **Inspector** find the **Overrides** drop down
+- [ ] Select **Apply All** to change all of the **Tile Prefabs** to use the dirt mesh
+
+
+![[apply-overrides-inspector.webp]]
+
+### Practice
+Practice editing prefabs by setting the **Tile Prefab** to use a different mesh using each of the methods described above
+- [ ] Edit the **Prefab** directly
+- [ ] Edit a **Tile** using the **Scene** prefab editor
+- [ ] Modify a **Tile** then **Apply** the **Override** to all prefabs
+
+Before continuing, update your **Tile Prefab** to use the `tile` mesh. This particular **Prefab** will be used as an empty tile where the player can build a structure.
