@@ -4,33 +4,53 @@
     "type": "split",
     "children": [
       {
-        "id": "bb2df6b6d226860b",
+        "id": "e4a492ecb26794b1",
         "type": "tabs",
         "children": [
           {
-            "id": "e4db21262765483b",
+            "id": "218e4d0ccd89cb32",
             "type": "leaf",
             "state": {
-              "type": "kanban",
+              "type": "markdown",
               "state": {
-                "file": "TODO Kanban.md",
-                "kanbanViewState": {
-                  "kanban-plugin": "board",
-                  "list-collapse": [
-                    false,
-                    false,
-                    true,
-                    false,
-                    false,
-                    false
-                  ]
-                }
+                "file": "Lessons/01 - Creating the Project.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-trello",
-              "title": "TODO Kanban"
+              "icon": "lucide-file",
+              "title": "01 - Creating the Project"
+            }
+          },
+          {
+            "id": "0d3df0e7d2668afb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Lessons/02 - Creating a Tile Grid.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "02 - Creating a Tile Grid"
+            }
+          },
+          {
+            "id": "9fcc4b17ff075bce",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Lessons/03 - Design a Level.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "03 - Design a Level"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -173,34 +193,43 @@
       "obsidian-kanban:Create new board": false
     }
   },
-  "active": "e4db21262765483b",
+  "active": "9fcc4b17ff075bce",
   "lastOpenFiles": [
-    "Lessons/1 - Creating the Project.md",
-    "Lessons/0 - Install Unity 6.md",
-    "Lessons/images/CreatingTheProject/DefaultProjectInitialized.png",
-    "Lessons/images/CreatingTheProject/UnitySetDefaultLayout.png",
-    "Lessons/images/CreatingTheProject/UnityEngineInitializing.png",
-    "Lessons/images/CreatingTheProject/UnityHubProjectSettings.png",
-    "Lessons/images/CreatingTheProject",
-    "Course Description.md",
-    "Lessons/images/Unity Install/UnityHubInstalls.png",
-    "Lessons/images/Unity Install",
-    "Lessons/images/Unity Install/SelectUnity6000.0.png",
-    "Lessons/images/Unity Install/Unity6InstallWebGLBuildSupport.png",
-    "Lessons/images/Unity Install/Unity6DownloadInProgress.png",
-    "Lessons/images/Unity Install/Unity6DownloadComplete.png",
-    "Lessons/images",
-    "Lessons/Lesson 0",
-    "Lessons",
-    "ExecutionOrder.svg",
+    "Downloads/kenney_tower-defense-kit/Preview.png",
+    "Downloads/kenney_tower-defense-kit/Overview.html",
+    "Downloads/kenney_tower-defense-kit/Models/FBX format/wood-structure.fbx",
+    "Downloads/kenney_tower-defense-kit/Models/FBX format/wood-structure-part.fbx",
+    "Downloads/kenney_tower-defense-kit/Models/FBX format/wood-structure-high.fbx",
+    "Downloads/kenney_tower-defense-kit/Models/FBX format/wood-structure-high-part.fbx",
+    "Downloads/kenney_tower-defense-kit/Models/FBX format/weapon-turret.fbx",
+    "Downloads/kenney_tower-defense-kit/Models/FBX format/tower-square-roof-c.fbx",
+    "Downloads/kenney_tower-defense-kit/Models/FBX format/tower-square-roof-b.fbx",
+    "Downloads/kenney_tower-defense-kit/Models/FBX format/tower-square-roof-a.fbx",
+    "Downloads/kenney_tower-defense-kit/Models/FBX format/tower-square-middle-c.fbx",
+    "Lessons/02 - Creating a Tile Grid.md",
+    "Lessons/03 - Design a Level.md",
+    "Lessons/images/02 - Creating a Tile Grid/challenge1-solution.png",
+    "Lessons/images/02 - Creating a Tile Grid/linear-on-z-axis.webp",
+    "Lessons/images/02 - Creating a Tile Grid/linear-on-10-objects.webp",
+    "Lessons/images/02 - Creating a Tile Grid/perfect-alignment-with-inspector.webp",
+    "Lessons/images/02 - Creating a Tile Grid/try-to-align.webp",
+    "Lessons/images/02 - Creating a Tile Grid/create-prefabs-folder.webp",
+    "Lessons/images/02 - Creating a Tile Grid/notice-prefab.png",
+    "Lessons/images/02 - Creating a Tile Grid/create-parent.webp",
+    "Lessons/images/02 - Creating a Tile Grid/create-prefab.webp",
+    "Lessons/images/02 - Creating a Tile Grid/ExtractFile.png",
+    "Lessons/images/02 - Creating a Tile Grid/Course Description.md",
+    "2024-11-25.md",
+    "Untitled.canvas",
+    "Lessons/00 - Install Unity 6.md",
+    "Lessons/01 - Creating the Project.md",
     "TODO Kanban.md",
     "Unity Manual Links.md",
-    "Untitled.canvas",
+    "Untitled Kanban.md",
     "Untitled 1.canvas",
     "TO DO.md",
     "Turrets.md",
     "Untitled Kanban 2.md",
-    "Untitled Kanban 1.md",
-    "Untitled Kanban.md"
+    "Untitled Kanban 1.md"
   ]
 }
