@@ -76,3 +76,9 @@ With everything you've learned so far, it is now time to design a map for your f
 When you're finished, your map might look something like the image below:
 
 ![[Example Finished Map.png]]
+
+## What's Next
+
+With a tile grid designed for your game, you are ready to set up the player's view. In the next section, you will configure your editor's Play Mode to optimize your design experience.
+
+[[04 - Play Mode Settings]]
