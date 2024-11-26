@@ -18,4 +18,7 @@ Take your Unity and C# skills to the next level with this hands-on workshop, des
 * [[01 - Creating the Project]]
 * [[02 - Creating a Tile Grid]]
 * [[03 - Creating Additional Tile Prefabs]]
+* [[04 - Play Mode Settings]]
+* [[05 - Creating an Isometric Camera]]
+* 
 * 
