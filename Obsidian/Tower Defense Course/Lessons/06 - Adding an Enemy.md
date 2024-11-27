@@ -198,4 +198,6 @@ When you have successfully implemented the **EnemyRotation** script, it should w
 
 ## What's Next
 
-In the next section you will do more things!
+In the next section you will create a **Waypoint** component that you can use to specify the path your enemies will take.
+
+[[07 - Waypoints]]

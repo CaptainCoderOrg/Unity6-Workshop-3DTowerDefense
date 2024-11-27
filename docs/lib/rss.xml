@@ -1,4 +1,4 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Tower Defense Course]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib\media\favicon.png</url><title>Tower Defense Course</title><link/></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Wed, 27 Nov 2024 15:01:18 GMT</lastBuildDate><atom:link href="lib\rss.xml" rel="self" type="application/rss+xml"/><pubDate>Wed, 27 Nov 2024 15:01:08 GMT</pubDate><copyright><![CDATA[Captain Coder]]></copyright><ttl>60</ttl><dc:creator>Captain Coder</dc:creator><item><title><![CDATA[Isometric Camera Challenge]]></title><description><![CDATA[ 
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Tower Defense Course]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib\media\favicon.png</url><title>Tower Defense Course</title><link/></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Wed, 27 Nov 2024 22:28:49 GMT</lastBuildDate><atom:link href="lib\rss.xml" rel="self" type="application/rss+xml"/><pubDate>Wed, 27 Nov 2024 22:28:35 GMT</pubDate><copyright><![CDATA[Captain Coder]]></copyright><ttl>60</ttl><dc:creator>Captain Coder</dc:creator><item><title><![CDATA[Isometric Camera Challenge]]></title><description><![CDATA[ 
  <br>Before starting this challenge, you should complete <a data-href="05 - Creating an Isometric Camera" href="\lessons\05-creating-an-isometric-camera.html" class="internal-link" target="_self" rel="noopener nofollow">05 - Creating an Isometric Camera</a>.<br>In this challenge you are tasked with setting up an Isometric Camera for a pre-existing scene.<br><br>
 <br>Download the Isometric Camera Challenge: <a data-href="IsometricCameraChallenge v1.0.0.unitypackage" href="\challenges\isometric-camera-challenge\isometriccamerachallenge-v1.0.0.unitypackage" class="internal-link" target="_self" rel="noopener nofollow">IsometricCameraChallenge v1.0.0.unitypackage</a>
 <br>Import the package into your Unity Project
@@ -363,7 +363,112 @@ Once again, enter Play Mode and verify that your Enemy moves at 1 unity per seco
 
 
 <br>Be sure to scale the rotation speed using Time.deltaTime
-<br>When you have successfully implemented the EnemyRotation script, it should work similar to the image below:<br><img alt="rotation-challenge-complete.webp" src="\lib\media\rotation-challenge-complete.webp"><br><br>In the next section you will do more things!]]></description><link>lessons\06-adding-an-enemy.html</link><guid isPermaLink="false">Lessons/06 - Adding an Enemy.md</guid><dc:creator><![CDATA[Captain Coder]]></dc:creator><pubDate>Wed, 27 Nov 2024 14:59:52 GMT</pubDate><enclosure url="lib\media\create-empty.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="lib\media\create-empty.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Unity Workshop - 3D Tower Defense]]></title><description><![CDATA[ 
+<br>When you have successfully implemented the EnemyRotation script, it should work similar to the image below:<br><img alt="rotation-challenge-complete.webp" src="\lib\media\rotation-challenge-complete.webp"><br><br>In the next section you will create a Waypoint component that you can use to specify the path your enemies will take.<br><a data-href="07 - Waypoints" href="\lessons\07-waypoints.html" class="internal-link" target="_self" rel="noopener nofollow">07 - Waypoints</a>]]></description><link>lessons\06-adding-an-enemy.html</link><guid isPermaLink="false">Lessons/06 - Adding an Enemy.md</guid><dc:creator><![CDATA[Captain Coder]]></dc:creator><pubDate>Wed, 27 Nov 2024 22:15:45 GMT</pubDate><enclosure url="lib\media\create-empty.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="lib\media\create-empty.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[07 - Waypoints]]></title><description><![CDATA[ 
+ <br>In this section, you will create a Waypoint script that you will use to define positions in your world for your enemies to move between.<br><br>It is possible to create a Prefab directly in the Project explorer.<br>
+<br>Navigate to your Prefabs folder
+<br>Right Click
+<br>Select Create &gt; Scene &gt; Prefab
+<br>Name the Prefab "Waypoint"
+<br><img alt="create-prefab-in-project.png" src="\lib\media\create-prefab-in-project.png"><br><img alt="waypoint-prefab.png" src="\lib\media\waypoint-prefab.png"><br>
+<br>Double click the Waypoint prefab to open it
+<br>If all went well, you should be in the Scenes | Prefab editor with an Empty Game Object named "Waypoint":<br><img alt="waypoint-scene.png" src="\lib\media\waypoint-scene.png"><br>To make it easy to know where the Waypoint is when you add it to a Scene, you can add a 3D Sphere (or another shape if you prefer).<br>
+<br>In the Waypoint's Hierarchy, Right Click
+<br>Select 3D Object &gt; Sphere
+<br><img alt="create-sphere.png" src="\lib\media\create-sphere.png"><br>This will add a child object to the Waypoint called Sphere that is positioned at the center of the Waypoint. You can verify this by ensuring the Transform's position is (0, 0, 0)<br><img alt="verify-sphere.png" src="\lib\media\verify-sphere.png"><br>You may have also noticed that the defaults Sphere generated comes with 3 additional components that are visible in the Inspector.<br>
+<br>Mesh Filter - Used to specify the mesh of this object
+<br>Mesh Renderer - Used to specify how the mesh is rendered
+<br>Sphere Collider - Used by Unity's 3D Physics system to detect collisions
+<br>Because the Waypoint does not need to collide with other objects, you can safely remove this component.<br>
+<br>Locate the Sphere Collider component in the Inspector
+<br>Click the 3 dots on the top right of the component
+<br>Select Remove Component
+<br><img alt="remove-sphere-collider.png" src="\lib\media\remove-sphere-collider.png"><br>Another way you can exit the Prefab editor is by clicking the Scenes text that appears in the top left of the Scene view.<br><img alt="exit-prefab-editor.webp" src="\lib\media\exit-prefab-editor.webp"><br>
+<br>Exit the Prefab editor and return to your Scene
+<br><br>You can add a Prefab directly into your Scene by dragging it into the Scene view.<br>
+<br>Add a Waypoint at the starting point of your path
+<br>Add a Waypoint at each corner of your path
+<br>Add a Waypoint at the end of your path
+<br><img alt="add-waypoints.webp" src="\lib\media\add-waypoints.webp"><br><br>Once again, you might find it difficult to precisely place the objects in the Scene view. To help with placement, you can enable Grid Snapping.<br>
+<br>In the Scene view, enable the Grid and Snapping settings from the Overlay Menu
+<br><img alt="grid-and-snapping.png" src="\lib\media\grid-and-snapping.png"><br>Clicking this button will show the Grid and Snap settings at the top of the Scene View<br><img alt="show-grid-and-snap-settings.webp" src="\lib\media\show-grid-and-snap-settings.webp"><br>This menu allows you to specify the size of the Grid and allows you to turn on Snapping. <br>
+<br>Set your Grid Size to 0.5
+<br><img alt="set-grid-snap-size.png" src="\lib\media\set-grid-snap-size.png"><br>
+<br>Enable Grid Snapping
+<br><img alt="enable-grid-snapping.png" src="\lib\media\enable-grid-snapping.png"><br>
+<br>Ensure that you have your Tool Handle settings are set to Pivot and Global
+<br><img alt="pivot-position.png" src="\lib\media\pivot-position.png"><br>With Grid Snapping enabled, you should now be able to place your waypoints more precisely on your tile map using the Move Tool.<br><img alt="move-tool.png" src="\lib\media\move-tool.png"><br>
+<br>With Grid Snapping enabled, use the Move Tool position your Waypoints
+<br><img alt="demonstrate-snap-movement.webp" src="\lib\media\demonstrate-snap-movement.webp"><br>If you're having trouble selecting your Waypoints, you can disable the ability to click your Tile Grid elements by hovering to the left of the Grid Game Object in the Hierarchy and clicking the finger icon.<br><img alt="disable-grid-clicking.png" src="\lib\media\disable-grid-clicking.png"><br>This will disable your ability to click on that Game Object in the Scene View. You can re-enable interactions by clicking the finger icon again.<br><img alt="disable-grid-clicking.webp" src="\lib\media\disable-grid-clicking.webp"><br><br>Currently, your Waypoints are visible in your Game View which means your player will see them during game play. You can test this by Entering Play Mode.<br><img alt="playmode-shows-waypoints.png" src="\lib\media\playmode-shows-waypoints.png"><br>One way you could hide the Waypoints would be to disable the Mesh Renderer. (Don't do this)<br><img alt="disable-mesh-renderer.webp" src="\lib\media\disable-mesh-renderer.webp"><br>However, it is very convenient to be able to see the Waypoints in the Scene view so we can adjust them.<br>Another option is to tell our Main Camera to ignore rendering them. This can be done by setting adding the Waypoints to a special rendering layer and then updating the Main Camera's Culling Mask to ignore that layer.<br><br>
+<br>Open your Project Settings
+
+<br>From the top menu Edit &gt; Project Settings
+
+
+<br>Select the Tags and Layers tab on the left
+<br><img alt="tags-and-layers.png" src="\lib\media\tags-and-layers.png"><br>
+<br>Verify you're editing the Layers drop down
+<br>Select Layer 6
+<br>Enter the name "Waypoint"
+<br><img alt="specify-waypoint-layer.png" src="\lib\media\specify-waypoint-layer.png"><br>
+<br>Close the Project Settings Window
+<br><br>In the Inspector you can see and modify the layer of a Game Object.<br><img alt="where-is-layer.png" src="\lib\media\where-is-layer.png"><br>
+<br>Select a Waypoint from your Hierarchy
+
+<br>Alternatively you could open it in Prefab mode
+
+
+<br>Set the Layer to Waypoint 
+<br>When prompted select "Yes, Change Children"
+
+<br>This will set the layer of all children objects to the selected layer
+
+
+<br><img alt="change-children.png" src="\lib\media\change-children.png"><br>
+<br>If you are not editing in Prefab mode, don't forget to apply the Override
+<br><br>Culling refers to the process of determining which objects in a scene are not visible to the camera and excluding them from rendering to improve performance. Next, you will update the Main Camera's Culling Mask to exclude the Waypoint layer.<br>
+<br>Select the Main Camera
+<br>In the Inspector locate the Camera components Rendering settings
+<br><img alt="culling-mask-settings.png" src="\lib\media\culling-mask-settings.png"><br>By default, the camera's Culling Mask will render everything. <br>
+<br>Select the Drop Down and unselect the Waypoint layer
+<br>You can verify that the camera is no longer rendering your Waypoints by entering the Game View.<br><img alt="verify-waypoints-hidden.webp" src="\lib\media\verify-waypoints-hidden.webp"><br><br>With your Waypoints placed on your map, it is now time to make them aware of their order. You can accomplish this by creating a Waypoint component that knows which Waypoint comes next in the sequence.<br>
+<br>Create a Waypoint MonoBehaviour
+<br>Delete the Start and Update methods from the template, you won't need them
+<br>Add a Waypoint property called Next
+
+<br>Remember to use good programming practices and us a private set
+
+
+<br>Serialize the Next property using the [field: SerializeField] attribute
+<br><img alt="waypoint-component.png" src="\lib\media\waypoint-component.png"><br><br>Can you remember how to add your new component to your Waypoint prefab? If you're having trouble, you can review how you added the EnemyMovement component in <a data-href="06 - Adding an Enemy" href="\lessons\06-adding-an-enemy.html" class="internal-link" target="_self" rel="noopener nofollow">06 - Adding an Enemy</a><br>
+<br>Add the Waypoint component to your Waypoint Prefab
+<br>Verify that each Waypoint object in your scene has the component
+<br><img alt="verify-waypoints.webp" src="\lib\media\verify-waypoints.webp"><br><br>By creating a Next property that has the type Waypoint , you have made it possible to specify the Next property of each Waypoint in the Inspector.<br>
+<br>Select your starting Waypoint Game Object from the Hierarchy
+<br>In the Inspector click the small circle next to the Next property
+<br>Select the second Waypoint Game Object from the list
+<br>Note: If you click the object in the Next field, it will highlight in the Hierarchy. If you double-click the object in the Next field, it will select that object.<br><img alt="set-next-on-first-waypoint.webp" src="\lib\media\set-next-on-first-waypoint.webp"><br>You can also set the an object property in the Inspector by dragging a game object into the property field.<br><img alt="set-waypoint-dragging.webp" src="\lib\media\set-waypoint-dragging.webp"><br>Sometimes this can be challenging to do because you can accidentally click the object you're trying to drag, changing the selected object in the Inspector. To help with this, you can open a new inspector window for a specific game object by Right Clicking on it and select Properties.<br><img alt="properties-window.webp" src="\lib\media\properties-window.webp"><br><br>Test out each of the methods for setting the Next for each of your Waypoints property to figure out which one works best for you. You should leave the final Waypoint's Next property as None. You will use this to signal to the Enemy that it has reached the end of the path.<br><br>While setting each of the Next properties, you may have sensed that this process could be error prone. That is, it is easy to set the wrong Waypoint. To help with this, you can use the OnDrawGizmos and OnDrawGizmosSelected methods to draw additional information in the Scene View.<br><br>The OnDrawGizmosSelect method is used to draw information in the Scene View when a Game Object is selected. <br>
+<br>Read the Friendly Manual
+
+<br><a data-tooltip-position="top" aria-label="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/MonoBehaviour.OnDrawGizmosSelected.html" rel="noopener nofollow" class="external-link" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/MonoBehaviour.OnDrawGizmosSelected.html" target="_blank">Unity - Scripting API: MonoBehaviour.OnDrawGizmosSelected()</a>
+<br><a data-tooltip-position="top" aria-label="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Handles.html" rel="noopener nofollow" class="external-link" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Handles.html" target="_blank">Unity - Scripting API: Handles</a>
+
+
+<br>Add using UnityEditor; to your using statements
+
+<br>Note: This will allow you to access the Handles API
+
+
+<br>Add the void OnDrawGizmosSelected() to your Waypoint script
+
+<br>Note: Spelling and casing must match exactly
+
+
+<br>Set the Handles.color property to Color.red
+<br>Use the Handles.DrawLine method to draw a line between the Waypoint and its Next
+<br><img alt="drawing-red-line-on-selected.png" src="\lib\media\drawing-red-line-on-selected.png"><br>
+With your new gizmo in place, you can now more easily verify that your Waypoints are connected properly:<br><img alt="view-gizmo-line.webp" src="\lib\media\view-gizmo-line.webp"><br><br>You most likely encountered NullReferenceException when you selected your final Waypoint. This is because the Next property is set to None. For class objects, this is the equivalent to a null value. To prevent this, you should add a null check to your code that exists your method early if Next == null.<br><img alt="null-check.png" src="\lib\media\null-check.png"><br><br>If you prefer, you can also use the OnDrawGizmos method which is executed in the Scene View even when the Game Object is not selected.<br>
+<br>Rename your OnDrawGizmosSelected method to OnDrawGizmos
+<br><img alt="on-draw-gizmos.png" src="\lib\media\on-draw-gizmos.png"><br>In the Scene View verify your path is correct<br><img alt="view-all-gizmo-lines.webp" src="\lib\media\view-all-gizmo-lines.webp"><br><br>It is important to review what you've learned in this lesson and apply it in a new context. Before continuing, I encourage you to attempt the Binary Waypoint Challenge.<br><br>With your Waypoints set up, it is now time to update your Enemy Movement script to move between each Waypoint.]]></description><link>lessons\07-waypoints.html</link><guid isPermaLink="false">Lessons/07 - Waypoints.md</guid><dc:creator><![CDATA[Captain Coder]]></dc:creator><pubDate>Wed, 27 Nov 2024 22:28:18 GMT</pubDate><enclosure url="lib\media\create-prefab-in-project.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="lib\media\create-prefab-in-project.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Unity Workshop - 3D Tower Defense]]></title><description><![CDATA[ 
  <br><br>Take your Unity and C# skills to the next level with this hands-on workshop, designed for aspiring game developers who want to create their own 3D Tower Defense game. This course builds on your foundational knowledge of Unity and programming, focusing on practical application, advanced Unity concepts, and user-centric game design.<br><br>
 <br>Completion of at least one introductory Unity course.
 <br>Completion of at least one C# course or willingness to complete a programming proficiency project before the second week  of class.
@@ -380,5 +485,6 @@ Once again, enter Play Mode and verify that your Enemy moves at 1 unity per seco
 <br><a data-href="04 - Play Mode Settings" href="\lessons\04-play-mode-settings.html" class="internal-link" target="_self" rel="noopener nofollow">04 - Play Mode Settings</a>
 <br><a data-href="05 - Creating an Isometric Camera" href="\lessons\05-creating-an-isometric-camera.html" class="internal-link" target="_self" rel="noopener nofollow">05 - Creating an Isometric Camera</a>
 <br><a data-href="06 - Adding an Enemy" href="\lessons\06-adding-an-enemy.html" class="internal-link" target="_self" rel="noopener nofollow">06 - Adding an Enemy</a>
+<br><a data-href="07 - Waypoints" href="\lessons\07-waypoints.html" class="internal-link" target="_self" rel="noopener nofollow">07 - Waypoints</a>
 <br>
-]]></description><link>index.html</link><guid isPermaLink="false">Index.md</guid><dc:creator><![CDATA[Captain Coder]]></dc:creator><pubDate>Wed, 27 Nov 2024 15:00:07 GMT</pubDate></item></channel></rss>
+]]></description><link>index.html</link><guid isPermaLink="false">Index.md</guid><dc:creator><![CDATA[Captain Coder]]></dc:creator><pubDate>Wed, 27 Nov 2024 22:17:37 GMT</pubDate></item></channel></rss>

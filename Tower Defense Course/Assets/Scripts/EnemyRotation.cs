@@ -1,4 +1,3 @@
-using System.Numerics;
 using UnityEngine;
 
 public class EnemyRotation : MonoBehaviour
@@ -14,6 +13,6 @@ public class EnemyRotation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Rotate(new UnityEngine.Vector3(0, RotationSpeed, 0) * Time.deltaTime);
+        transform.Rotate(new Vector3(0, RotationSpeed, 0) * Time.deltaTime);
     }
 }
