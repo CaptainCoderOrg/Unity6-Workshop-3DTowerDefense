@@ -1,4 +1,4 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Tower Defense Course]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib\media\favicon.png</url><title>Tower Defense Course</title><link/></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Wed, 27 Nov 2024 01:47:00 GMT</lastBuildDate><atom:link href="lib\rss.xml" rel="self" type="application/rss+xml"/><pubDate>Wed, 27 Nov 2024 01:46:52 GMT</pubDate><copyright><![CDATA[Captain Coder]]></copyright><ttl>60</ttl><dc:creator>Captain Coder</dc:creator><item><title><![CDATA[Isometric Camera Challenge]]></title><description><![CDATA[ 
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Tower Defense Course]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib\media\favicon.png</url><title>Tower Defense Course</title><link/></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Wed, 27 Nov 2024 15:01:18 GMT</lastBuildDate><atom:link href="lib\rss.xml" rel="self" type="application/rss+xml"/><pubDate>Wed, 27 Nov 2024 15:01:08 GMT</pubDate><copyright><![CDATA[Captain Coder]]></copyright><ttl>60</ttl><dc:creator>Captain Coder</dc:creator><item><title><![CDATA[Isometric Camera Challenge]]></title><description><![CDATA[ 
  <br>Before starting this challenge, you should complete <a data-href="05 - Creating an Isometric Camera" href="\lessons\05-creating-an-isometric-camera.html" class="internal-link" target="_self" rel="noopener nofollow">05 - Creating an Isometric Camera</a>.<br>In this challenge you are tasked with setting up an Isometric Camera for a pre-existing scene.<br><br>
 <br>Download the Isometric Camera Challenge: <a data-href="IsometricCameraChallenge v1.0.0.unitypackage" href="\challenges\isometric-camera-challenge\isometriccamerachallenge-v1.0.0.unitypackage" class="internal-link" target="_self" rel="noopener nofollow">IsometricCameraChallenge v1.0.0.unitypackage</a>
 <br>Import the package into your Unity Project
@@ -273,30 +273,97 @@ Note: After the download has finished, the installer will prompt you to finish t
 You'll now notice that the elements within the Game View will begin to scale with the size of the view port. This is because the game camera will now force the specified resolution / aspect ratio.<br>The majority of desktop and TV screens use a 16:9 aspect ratio. If you are developing for mobile devices, you will need to take more care to ensure the game functions properly for more aspect ratios. For this project, we will use a 16:9 ratio.<br>
 <br>Set the Aspect to 16:9
 <br><br>Whew! That was a lot of work. The best way to learn and retain something is to practice it. Before continuing to the next lesson, why not see if you can set up an Isometric Camera again in the <a data-href="Isometric Camera Challenge" href="\challenges\isometric-camera-challenge\isometric-camera-challenge.html" class="internal-link" target="_self" rel="noopener nofollow">Isometric Camera Challenge</a>?<br>If you get stuck or need help, you can refer back to this lesson. Best of luck!<br><br>With your Game Camera set up, you are ready it is time to create your game's mechanics. In the next lesson, you will learn how to create a simple enemy that moves within your world.<br><a data-href="06 - Adding an Enemy" href="\lessons\06-adding-an-enemy.html" class="internal-link" target="_self" rel="noopener nofollow">06 - Adding an Enemy</a>]]></description><link>lessons\05-creating-an-isometric-camera.html</link><guid isPermaLink="false">Lessons/05 - Creating an Isometric Camera.md</guid><dc:creator><![CDATA[Captain Coder]]></dc:creator><pubDate>Wed, 27 Nov 2024 01:44:49 GMT</pubDate><enclosure url="lib\media\iso-camera-scene-view.webp" length="0" type="image/webp"/><content:encoded>&lt;figure&gt;&lt;img src="lib\media\iso-camera-scene-view.webp"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[06 - Adding an Enemy]]></title><description><![CDATA[ 
- <br>In this section, you will create a simple enemy that can move around the map.<br><br>Start by creating an Empty Game Object in your Hierarchy that will act as the base for your Enemy.<br>
+ <br>In this section, you will create a simple enemy that can move around the map.<br><br>Kenney provides hundreds of free assets to the public domain that can be used to help in your prototypes (and even commercial projects). In this section, you will use the Graveyard Kit to create an enemy using one of the 5 provided models and animations.<br>Before starting, you should import the FBX Models from this asset pack: <a data-tooltip-position="top" aria-label="https://kenney.nl/assets/graveyard-kit" rel="noopener nofollow" class="external-link" href="https://kenney.nl/assets/graveyard-kit" target="_blank">Graveyard Kit · Kenney</a><br>If you need help importing the models, you can refer to the Importing Asset section of <a data-href="02 - Creating a Tile Grid#Importing Assets" href="\lessons\02-creating-a-tile-grid.html#Importing_Assets" class="internal-link" target="_self" rel="noopener nofollow">02 - Creating a Tile Grid &gt; Importing Assets</a><br>Here is a quick check list to help you:<br>
+<br>Download the Asset Pack
+<br>Extract the ZIP archive
+<br>Find the FBX Model folder
+<br>Import the FBX Models into your Assets
+<br>Rename the folder (I recommend Kenny Graveyard Kit)
+<br><br>Start by creating an Empty Game Object in your Hierarchy that will act as the base for your Enemy.<br>
 <br>Right click in the Hierarchy
 <br>Select Create Empty
 <br>Rename the Game Object. (I recommend calling it Enemy)
-<br><img alt="create-empty.png" src="\lib\media\create-empty.png"><br>Note: Double check that the new Game Object is not a child of any other object.<br><img alt="ensure-top-level-enemy.png" src="\lib\media\ensure-top-level-enemy.png"><br>In the Kenney Tower Defense Kit assets, there are several UFO model that you can use for your first enemy:<br>
-<br>enemy-ufo-a
-<br>enemy-ufo-b
-<br>enemy-ufo-c
-<br>enemy-ufo-d
-<br>You can search your assets for a specific file by using the search bar at the top of the Project explorer tab.<br>
-<br>In your Project explorer, Search for enemy-ufo-
-<br>Drag one of the UFO models onto your Enemy game object to make it a child object.
+<br><img alt="create-empty.png" src="\lib\media\create-empty.png"><br>Note: Double check that the new Game Object is not a child of any other object.<br><img alt="ensure-top-level-enemy.png" src="\lib\media\ensure-top-level-enemy.png"><br>In the Kenney Graveyard Kit you will find 5 character models that can be used as a model for your Enemy:<br>
+<br>character-digger
+<br>character-ghost
+<br>character-skeleton
+<br>character-vampire
+<br>character-zombie
+<br>In the Project tab, if you search for character-, you should see the 5 models:<br>You can search your assets for a specific file by using the search bar at the top of the Project explorer tab.<br><img alt="kenney-character-models.png" src="\lib\media\kenney-character-models.png"><br>
+<br>Drag one of the character models onto your Enemy game object to make it a child object.
 
-<br>Note: For this part of the project, it is recommended to use a UFO without a weapon attached to the top.
+<br>Note: For this part of the project, I will be using the character-zombie model. However, feel free to use any of the models.
 
 
-<br><img alt="add-enemy-ufo-model.webp" src="\lib\media\add-enemy-ufo-model.webp"><br><br>Can you remember how to unpack a prefab? Notice, the enemy-ufo- model you have selected is a Prefab in the Hierarchy. Can you unpack it?<br>
+<br><img alt="add-model-to-enemy.webp" src="\lib\media\add-model-to-enemy.webp"><br><br>Can you remember how to unpack a prefab? Notice, the character-xyz model you have selected is a Prefab in the Hierarchy. Can you unpack it?<br>
 <br>Unpack the enemy-ufo- model in your Hierarchy
 <br>Rename the game object to be model
 <br>When you have finished, your Hierarchy should look similar to the image below:<br><img alt="practice-renaming-unpacking.png" src="\lib\media\practice-renaming-unpacking.png"><br><br>Now that you have an Enemy game object, turn it into a Prefab. At this point, you now have multiple types of Prefabs (tiles and enemies). Create a folder for each within your Prefabs folder to help organize them.<br>
 <br>Create a folder for your Enemy prefabs
 <br>Create a folder for your Tile prefabs
 <br>Move all of your prefabs to the appropriate folder
-<br>When you have finished, your Prefabs folder should look similar to the folders below:<br><img alt="prefab-folder-structure.webp" src="\lib\media\prefab-folder-structure.webp"><br>]]></description><link>lessons\06-adding-an-enemy.html</link><guid isPermaLink="false">Lessons/06 - Adding an Enemy.md</guid><dc:creator><![CDATA[Captain Coder]]></dc:creator><pubDate>Tue, 26 Nov 2024 16:03:52 GMT</pubDate><enclosure url="lib\media\create-empty.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="lib\media\create-empty.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Unity Workshop - 3D Tower Defense]]></title><description><![CDATA[ 
+<br>When you have finished, your Prefabs folder should look similar to the folders below:<br><img alt="create-prefabs-folders.webp" src="\lib\media\create-prefabs-folders.webp"><br><br>To make your Enemy move, you will need to create a MonoBehaviour. A MonoBehaviour is a scripted component that provides methods for managing the behaviour of your Game Objects while the game is running.<br>Create a MonoBehaviour script for your enemies movement called EnemyMovement<br>
+<br>In the Project tab, create a Folder called Scripts
+<br><img alt="create-scripts-folder.webp" src="\lib\media\create-scripts-folder.webp"><br>
+<br>Right click inside the Scripts folder
+<br>Select Create &gt; Scripting &gt; MonoBehaviour Script
+<br><img alt="create-mono-behaviour-script.png" src="\lib\media\create-mono-behaviour-script.png"><br>
+<br>Name the script EnemyMovement
+
+<br>Note: You should not use spaces and you should use CameCasing when naming Scripts
+
+
+<br>Double click to open the EnemyMovement script
+<br>After the script loads, verify that the class name is EnemyMovement. If you did not rename the script immediately upon creation in Unity, the template will set the name to be NewMonoBehaviourScript. It is important to rename this when you open the file for the first time.<br><img alt="common-mistake.png" src="\lib\media\common-mistake.png"><br>When named correctly, it should match the name of the file. For example, in VS Code:<br><img alt="verify-name.png" src="\lib\media\verify-name.png"><br><br>Now that you have a EnemyMovement script, you can attach it to your Enemy Game Object<br>
+<br>Select your Enemy from the Hierarchy
+<br>In the Inspector select Add Component
+<br>Search for EnemyMovement and Select it
+<br>If all went well, you should now see an Enemy Movement component in the Inspector<br><img alt="add-enemy-movement.webp" src="\lib\media\add-enemy-movement.webp"><br>You may have noticed that the Enemy Movement component in your inspector has a small green plus icon next to it. This means that the component you added only exists on this instance of your Enemy and not your Enemy Prefab.<br><img alt="enemy-movement-prefab-overrid.png" src="\lib\media\enemy-movement-prefab-overrid.png"><br><br>Can you remember how to apply Overrides to your Prefab?<br>
+<br>Apply the override to your Enemy Prefab to make the Enemy Movement script part of the Prefab
+<br>When you are done, the green plus icon should no longer be visible on the Enemy Movement component in the inspector.<br><img alt="enemy-movement-override-applied.png" src="\lib\media\enemy-movement-override-applied.png"><br><br>One of the most useful methods that are provided by a MonoBehaviour is the Update method. This method is called by the Unity Engine each frame your game is running. This can be used to update the Transform Position of a GameObject each frame to make it move in the game world.<br>Change your EnemyMovement script's Update method to increase the enemy's transform.position on the X axis each frame.<br><img alt="increment-transform-enemy-movement.png" src="\lib\media\increment-transform-enemy-movement.png"><br>Be sure to save your work. Then, return to the Unity Editor and enter Play Mode. If all went well, you should see your Enemy moving along the x-axis of your game world. You can verify this in the Inspector.<br>
+<br>Enter Play Mode
+<br>Verify your Enemy Movement script is updating the Transform's Position in the Inspector
+<br><img alt="playmode-move-enemy.webp" src="\lib\media\playmode-move-enemy.webp"><br><br>You may have noticed the Enemy is not moving at a consistent rate. This is because, the Enemy Movement scripts Update method is being called each frame. This makes the movement of the Enemy dependent on the Frame Rate of the game.<br>To help with this, you can scale the movement using the amount of time that has passed between frames. In Unity, this value can be accessed using the Time.deltaTime property.<br>
+<br>Update your movement to be scaled with Time.deltaTime
+<br><img alt="scale-movement-with-delta-time.png" src="\lib\media\scale-movement-with-delta-time.png"><br>
+Once again, enter Play Mode and verify your Enemy's Transform Position is updating. You will notice your Enemy moves much slower than it did before. This is because it is now moving at 0.1 units per second. You can think of the expression * Time.deltaTime as "per second". For example, if you want an object to move 5 units per second, you would use 5 * Time.deltaTime.<br><img alt="playmode-move-enemy-deltaTime.webp" src="\lib\media\playmode-move-enemy-deltatime.webp"><br><br>Different Enemies will move at different speeds. To help accommodate this, add a Speed property to your EnemyMovement script. <br>
+<br>Add a float Speed property to your EnemyMovement class
+
+<br>Following "good" programming practices, create a public getter and a private setter
+
+
+<br>Set the default value of Speed to 1f
+<br><img alt="add-speed-to-enemy-movement.png" src="\lib\media\add-speed-to-enemy-movement.png"><br>
+<br>In your Update method, use the Speed property rather than the float literal 0.1.
+<br><img alt="update-method-with-speed-property.png" src="\lib\media\update-method-with-speed-property.png"><br>
+Once again, enter Play Mode and verify that your Enemy moves at 1 unity per second.<br><img alt="playmode-move-at-1unit-per-second.webp" src="\lib\media\playmode-move-at-1unit-per-second.webp"><br><br>It is useful to be able to modify a property from the Unity Inspector. To do this, you must Serialize your property by adding the [field: SerializeField] attribute to the property that you would like to see in the inspector. <br>
+<br>Add the [field: SerializeField] to your Speed property
+<br><img alt="serialize-speed-property.png" src="\lib\media\serialize-speed-property.png"><br>Now, when you select your Enemy, you will see the Speed property in the Enemy Movement component in the Inspector. You can adjust this value directly in the Inspector to change the speed of your Enemy. You can even do this while in Play Mode! However, be aware that when you exit Play Mode any changes you made will be reset to their original values.<br>
+<br>Modify the Enemy's Speed directly in the inspector setting it to 2
+<br>Enter Play Mode
+<br>While in Play Mode, adjust the Speed
+<br>Exit Play Mode
+<br>Notice, that the Speed resets to the original value: 2
+<br><img alt="adjusting-speed-in-inspector.webp" src="\lib\media\adjusting-speed-in-inspector.webp"><br><br>Using what you've learned in this lesson, create a new MonoBehaviour Script called "EnemyRotation" that allows you to specify how quickly an Enemy rotates on the Y axis.<br>
+<br>Read the Friendly Manul: <a data-tooltip-position="top" aria-label="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.Rotate.html" rel="noopener nofollow" class="external-link" href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.Rotate.html" target="_blank">Unity - Scripting API: Transform.Rotate</a>
+
+<br>This method allows you to rotate a Game Object
+
+
+<br>Create a EnemyRotation script
+<br>In Update, rotate the enemy on the Y-axis
+<br>Add a RotationSpeed property to the script
+
+<br>Initialize the default value to 90f (e.g. 90 degrees per second)
+
+
+<br>The script should serialize a RotationSpeed property so the value can be modified in the Inspector
+
+<br>Follow good programming practices an use a private setter
+
+
+<br>Be sure to scale the rotation speed using Time.deltaTime
+<br>When you have successfully implemented the EnemyRotation script, it should work similar to the image below:<br><img alt="rotation-challenge-complete.webp" src="\lib\media\rotation-challenge-complete.webp"><br><br>In the next section you will do more things!]]></description><link>lessons\06-adding-an-enemy.html</link><guid isPermaLink="false">Lessons/06 - Adding an Enemy.md</guid><dc:creator><![CDATA[Captain Coder]]></dc:creator><pubDate>Wed, 27 Nov 2024 14:59:52 GMT</pubDate><enclosure url="lib\media\create-empty.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="lib\media\create-empty.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Unity Workshop - 3D Tower Defense]]></title><description><![CDATA[ 
  <br><br>Take your Unity and C# skills to the next level with this hands-on workshop, designed for aspiring game developers who want to create their own 3D Tower Defense game. This course builds on your foundational knowledge of Unity and programming, focusing on practical application, advanced Unity concepts, and user-centric game design.<br><br>
 <br>Completion of at least one introductory Unity course.
 <br>Completion of at least one C# course or willingness to complete a programming proficiency project before the second week  of class.
@@ -312,6 +379,6 @@ You'll now notice that the elements within the Game View will begin to scale wit
 <br><a data-href="03 - Creating Additional Tile Prefabs" href="\lessons\03-creating-additional-tile-prefabs.html" class="internal-link" target="_self" rel="noopener nofollow">03 - Creating Additional Tile Prefabs</a>
 <br><a data-href="04 - Play Mode Settings" href="\lessons\04-play-mode-settings.html" class="internal-link" target="_self" rel="noopener nofollow">04 - Play Mode Settings</a>
 <br><a data-href="05 - Creating an Isometric Camera" href="\lessons\05-creating-an-isometric-camera.html" class="internal-link" target="_self" rel="noopener nofollow">05 - Creating an Isometric Camera</a>
+<br><a data-href="06 - Adding an Enemy" href="\lessons\06-adding-an-enemy.html" class="internal-link" target="_self" rel="noopener nofollow">06 - Adding an Enemy</a>
 <br>
-<br>
-]]></description><link>index.html</link><guid isPermaLink="false">Index.md</guid><dc:creator><![CDATA[Captain Coder]]></dc:creator><pubDate>Tue, 26 Nov 2024 21:51:15 GMT</pubDate></item></channel></rss>
+]]></description><link>index.html</link><guid isPermaLink="false">Index.md</guid><dc:creator><![CDATA[Captain Coder]]></dc:creator><pubDate>Wed, 27 Nov 2024 15:00:07 GMT</pubDate></item></channel></rss>
