@@ -251,7 +251,7 @@ In the **Scene View** verify your path is correct
 
 ## Binary Waypoint Challenge
 
-It is important to review what you've learned in this lesson and apply it in a new context. Before continuing, I encourage you to attempt the **Binary Waypoint Challenge**.
+It is important to review what you've learned in this lesson and apply it in a new context. Before continuing, I encourage you to attempt the [[Binary Waypoint Challenge]]
 
 ## What's Next
 

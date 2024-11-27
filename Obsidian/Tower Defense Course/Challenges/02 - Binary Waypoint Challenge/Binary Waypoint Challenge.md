@@ -20,9 +20,8 @@ In this challenge, you are tasked with creating a **Binary Waypoint** that can c
 	- [ ] Add null checks such that 0, 1, or 2, waypoints can be specified
 - [ ] Add **Binary Waypoints** to the scene to match the image below
 
+![[binary-waypoint-connections.png]]
 
-### Solution Example
+- [ ] Ensure that the **Binary Waypoints** are not visible in the **Game View**
 
-When you've completed this challenge, your **Game View** should look similar to the one below.
-
-![[isometric-camera-challenge-solution.png]]
+![[no-waypoints-visible.png]]

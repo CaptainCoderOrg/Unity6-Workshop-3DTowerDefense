@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Challenges/02 - Binary Waypoint Challenge/Binary Waypoint Challenge.md",
+                "file": "Lessons/07 - Waypoints.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Binary Waypoint Challenge"
+              "title": "07 - Waypoints"
             }
           },
           {
@@ -182,9 +182,12 @@
   },
   "active": "6e959a10f8f265a2",
   "lastOpenFiles": [
+    "Challenges/02 - Binary Waypoint Challenge/Binary Waypoint Challenge.md",
+    "assets/Challenges/Binary Waypoint Challenge/no-waypoints-visible.png",
+    "assets/Challenges/Binary Waypoint Challenge",
+    "assets/Challenges/Binary Waypoint Challenge/binary-waypoint-connections.png",
     "Challenges/02 - Binary Waypoint Challenge/BinaryWaypointChallenge V1.0.0.unitypackage",
     "Lessons/07 - Waypoints.md",
-    "Challenges/02 - Binary Waypoint Challenge/Binary Waypoint Challenge.md",
     "Challenges/01 - Isometric Camera Challenge/Isometric Camera Challenge.md",
     "Challenges/02 - Binary Waypoint Challenge",
     "Index.md",
@@ -203,8 +206,6 @@
     "assets/07 - Waypoints/waypoint-component.png",
     "assets/07 - Waypoints/properties-window.webp",
     "assets/07 - Waypoints/set-waypoint-dragging.webp",
-    "assets/07 - Waypoints/set-next-on-first-waypoint.webp",
-    "assets/07 - Waypoints/verify-waypoints.webp",
     "assets/07 - Waypoints",
     "Dev Notes.md",
     "Unity Manual Links.md",
@@ -215,8 +216,6 @@
     "Challenges/Isometric Camera Challenge/IsometricCameraChallenge.unitypackage",
     "Challenges/01 - Isometric Camera Challenge",
     "Challenges",
-    "assets/05 - Isometric Camera",
-    "assets/04 - Play Mode Settings",
     "TODO Kanban.md",
     "2024-11-25.md",
     "Lessons/03 - Design a Level.md",
