@@ -176,6 +176,11 @@ You'll now notice that the elements within the **Game View** will begin to scale
 The majority of desktop and TV screens use a 16:9 aspect ratio. If you are developing for mobile devices, you will need to take more care to ensure the game functions properly for more aspect ratios. For this project, we will use a 16:9 ratio.
 
 - [ ] Set the **Aspect** to **16:9**
+## Isometric Camera Challenge
+Whew! That was a lot of work. The best way to learn and retain something is to practice it. Before continuing to the next lesson, why not see if you can set up an Isometric Camera again in the [[Isometric Camera Challenge]]?
+
+If you get stuck or need help, you can refer back to this lesson. Best of luck!
+
 ## What's Next
 
 With your Game Camera set up, you are ready it is time to create your game's mechanics. In the next lesson, you will learn how to create a simple enemy that moves within your world.

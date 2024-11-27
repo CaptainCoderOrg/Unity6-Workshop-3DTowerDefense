@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Lessons/05 - Creating an Isometric Camera.md",
+                "file": "Challenges/Isometric Camera Challenge/Isometric Camera Challenge.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "05 - Creating an Isometric Camera"
+              "title": "Isometric Camera Challenge"
             }
           }
         ]
@@ -169,13 +169,22 @@
   "active": "0a19818881cedf03",
   "lastOpenFiles": [
     "Index.md",
+    "Lessons/06 - Adding an Enemy.md",
     "Lessons/05 - Creating an Isometric Camera.md",
     "Lessons/04 - Play Mode Settings.md",
     "Lessons/03 - Creating Additional Tile Prefabs.md",
     "Lessons/02 - Creating a Tile Grid.md",
     "Lessons/01 - Creating the Project.md",
     "Lessons/00 - Install Unity 6.md",
-    "Lessons/06 - Adding an Enemy.md",
+    "Challenges/Isometric Camera Challenge/Isometric Camera Challenge.md",
+    "assets/Challenges/Isometric Camera Challenge/import-challenge.webp",
+    "assets/Challenges/Isometric Camera Challenge/isometric-camera-challenge-solution.png",
+    "assets/Challenges/Isometric Camera Challenge",
+    "assets/Challenges",
+    "Challenges/Isometric Camera Challenge/IsometricCameraChallenge v1.0.0.unitypackage",
+    "Challenges/Isometric Camera Challenge/IsometricCameraChallenge.unitypackage",
+    "Challenges/Isometric Camera Challenge",
+    "Challenges",
     "assets/05 - Isometric Camera/position-pivot.png",
     "assets/05 - Isometric Camera/missing-corner.png",
     "assets/05 - Isometric Camera/orthographic-size.webp",
@@ -184,8 +193,6 @@
     "assets/05 - Isometric Camera/pivot-setting.png",
     "assets/05 - Isometric Camera/adjust-clipping-plane.webp",
     "assets/05 - Isometric Camera/set-hd-resolution.webp",
-    "assets/05 - Isometric Camera/disable-low-aspect-ratios.webp",
-    "assets/05 - Isometric Camera/center-all-tiles-with-pivot.webp",
     "assets/05 - Isometric Camera",
     "assets/04 - Play Mode Settings",
     "assets/06 - Adding an Enemy",
@@ -194,12 +201,6 @@
     "2024-11-25.md",
     "assets/03 - Creating Path and Obstacle Tiles",
     "Lessons/03 - Design a Level.md",
-    "Downloads/kenney_tower-defense-kit/Overview.html",
-    "Downloads/kenney_tower-defense-kit/Models/FBX format/wood-structure.fbx",
-    "Downloads/kenney_tower-defense-kit/Models/FBX format/wood-structure-part.fbx",
-    "Downloads/kenney_tower-defense-kit/Models/FBX format/wood-structure-high.fbx",
-    "Downloads/kenney_tower-defense-kit/Models/FBX format/wood-structure-high-part.fbx",
-    "Downloads/kenney_tower-defense-kit/Models/FBX format/weapon-turret.fbx",
     "Untitled.canvas",
     "Untitled Kanban.md",
     "Untitled 1.canvas",

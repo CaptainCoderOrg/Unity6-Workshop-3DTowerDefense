@@ -47,12 +47,8 @@
   "filesToExport": [
     [
       "assets",
-      "Lessons/00 - Install Unity 6.md",
-      "Lessons/01 - Creating the Project.md",
-      "Lessons/02 - Creating a Tile Grid.md",
-      "Lessons/03 - Creating Additional Tile Prefabs.md",
-      "Lessons/04 - Play Mode Settings.md",
-      "Lessons/05 - Creating an Isometric Camera.md",
+      "Challenges",
+      "Lessons",
       "Index.md"
     ]
   ]
