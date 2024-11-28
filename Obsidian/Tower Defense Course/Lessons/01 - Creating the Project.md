@@ -21,8 +21,28 @@ You can set the default layout from the top menu: **Windows > Layouts > Default*
 
 ![[UnitySetDefaultLayout.png]]
 
+## Create a Tower Defense Scene
+Before continuing, be sure to create a new **Tower Defense Scene** for your project. If you use the default **Sample Scene** there is a slight chance that it could be overwritten during an import of library / challenge project.
+
+- [ ] In the **Project View**, navigate to **Assets > Scenes**
+
+![[open-scenes-folder.png]]
+
+- [ ] Right click in the **Project View** 
+- [ ] Select **Create > Scene > Scene**
+
+![[create-scene.png]]
+
+- [ ] Rename your new Scene (I recommend "TowerDefenseScene")
+
+![[rename-scene.png]]
+
+- [ ] Double click to open your new **Scene**
+- [ ] Delete the original `SampleScene` to prevent yourself from accidentally using it.
+
+![[delete-sample-scene.png]]
 ## What's Next
 
-In the next section, you create a Tile Grid that will be used to create your map
+With your **Tower Defense Scene** created, you're ready to design your map. In the next section, you create a Tile Grid that will be used to create your map
 
 [[02 - Creating a Tile Grid]]

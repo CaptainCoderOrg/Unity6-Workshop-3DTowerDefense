@@ -207,6 +207,14 @@ Sometimes this can be challenging to do because you can accidentally click the o
 
 Test out each of the methods for setting the **Next** for each of your **Waypoints** property to figure out which one works best for you. You should leave the final **Waypoint**'s **Next** property as **None**. You will use this to signal to the **Enemy** that it has reached the end of the path.
 
+## Organizing the **Hierarchy**
+
+Depending on the number of **Waypoints** you have created, your **Hierarchy** might be feeling a bit crowded. To help with this, create an **Empty Parent** that contains all of the **Waypoint**s as children object.
+
+When you're finished, your **Hierarchy** should look similar to the image below:
+
+![[organize-waypoints.png]]
+
 ## Drawing the Waypoint Path in the Scene View
 
 While setting each of the **Next** properties, you may have sensed that this process could be error prone. That is, it is easy to set the wrong **Waypoint**. To help with this, you can use the **OnDrawGizmos** and **OnDrawGizmosSelected** methods to draw additional information in the **Scene View**.
