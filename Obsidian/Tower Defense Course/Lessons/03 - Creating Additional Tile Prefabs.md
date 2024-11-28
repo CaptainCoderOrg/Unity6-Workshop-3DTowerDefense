@@ -1,6 +1,10 @@
-* Video: [LINK](https://youtu.be/HqbWWXe45LM?si=GJe-BL-USb6s42kp)
-
 Before you can design your first level, you will need to create a few more **Prefab**s that will be used on your Grid in place of the empty **Tile**.
+## Mini-Lecture
+The mini-lecture below provides a high level overview of what you'll learn in this section. Watch the video and take notes. Then, complete the lesson below to apply the concepts from the video. 
+
+**Warning**: It is not recommended to work along side the video as the content is not identical to the lesson.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/HqbWWXe45LM?si=vEG6DDuP7stoX5g7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Path Tile Prefab
 
