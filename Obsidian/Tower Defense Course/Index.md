@@ -22,4 +22,5 @@ Take your Unity and C# skills to the next level with this hands-on workshop, des
 * [[05 - Creating an Isometric Camera]]
 * [[06 - Adding an Enemy]]
 * [[07 - Waypoints]]
+* [[08 - Waypoint Traveler]]
 * 
