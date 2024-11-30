@@ -117,8 +117,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1419905135498996411}
   - {fileID: 4312744532924042750}
+  - {fileID: 1419905135498996411}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2489267525500340341
@@ -133,6 +133,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ce6eb3bdc40ec24f8bb67ab57f82f9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <AoE>k__BackingField: {fileID: 7046463321914456436}
+  <Model>k__BackingField: {fileID: 1801251414536351745}
 --- !u!1 &6805406452359512801
 GameObject:
   m_ObjectHideFlags: 0
@@ -231,6 +233,8 @@ GameObject:
   - component: {fileID: 7404784183551740439}
   - component: {fileID: 7437564638314231108}
   - component: {fileID: 764341877696808789}
+  - component: {fileID: 5888070607451994549}
+  - component: {fileID: 7046463321914456436}
   m_Layer: 0
   m_Name: Area of Engagement
   m_TagString: Untagged
@@ -327,3 +331,43 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &5888070607451994549
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7728690027993273183}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &7046463321914456436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7728690027993273183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2f6c99da4608274a93e9e745460ab84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <Targets>k__BackingField: []
