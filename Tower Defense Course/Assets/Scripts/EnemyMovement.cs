@@ -10,6 +10,7 @@ public class EnemyMovement : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        if (Target == null) { return; }
         transform.position = Target.transform.position;
         transform.LookAt(Target.transform);
     }
