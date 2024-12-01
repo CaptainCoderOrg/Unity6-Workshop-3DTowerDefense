@@ -45,6 +45,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20db8e6ccd7e52d49ac7574dbd17079a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <Speed>k__BackingField: 5
+  <Damage>k__BackingField: 1
+  <Target>k__BackingField: {fileID: 0}
 --- !u!1001 &7837227932244050199
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -59,7 +62,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 32ca010d28f79844a881d625926080a7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 32ca010d28f79844a881d625926080a7, type: 3}
       propertyPath: m_LocalPosition.z

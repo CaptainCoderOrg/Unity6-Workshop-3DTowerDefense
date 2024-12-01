@@ -28,7 +28,7 @@ public class TurretAttack : MonoBehaviour
         // Sets the projectile's position to match the turret's position
         newProjectile.transform.position = transform.position;
         // Sets the projectile's target to the first target in the AoE
-        newProjectile.Target = AoE.Targets[0];
+        newProjectile.Target = AoE.Targets[0].transform;
     }
 }
 

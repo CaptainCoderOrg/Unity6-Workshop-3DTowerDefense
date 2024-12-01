@@ -12182,7 +12182,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 917543944671153621, guid: ce9033322ad96034d8f634869577f668, type: 3}
       propertyPath: <Delay>k__BackingField
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 917543944671153621, guid: ce9033322ad96034d8f634869577f668, type: 3}
       propertyPath: <Enemy>k__BackingField
@@ -15621,11 +15621,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4312744532924042750, guid: 0439672eb6baad3409fae84ec64d6051, type: 3}
       propertyPath: m_LocalScale.x
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4312744532924042750, guid: 0439672eb6baad3409fae84ec64d6051, type: 3}
       propertyPath: m_LocalScale.z
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
