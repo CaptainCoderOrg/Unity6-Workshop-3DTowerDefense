@@ -7,7 +7,7 @@ public class Projectile : MonoBehaviour
     [field: SerializeField]
     public float Damage { get; private set; } = 1;
     [field: SerializeField]
-    public Transform Target { get; private set; }
+    public Transform Target { get; set; }
 
     void Update()
     {
