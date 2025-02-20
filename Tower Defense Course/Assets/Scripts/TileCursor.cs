@@ -12,6 +12,11 @@ public class TileCursor : MonoBehaviour
         ListenToTilesIn(TargetGrid);
     }
 
+    void OnDisable()
+    {
+        StopListeningToTilesIn(TargetGrid);
+    }
+
     public void ListenToTilesIn(GameObject grid)
     {
         foreach (TileController tile in grid.GetComponentsInChildren<TileController>())

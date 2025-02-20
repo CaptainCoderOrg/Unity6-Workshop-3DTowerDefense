@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3908192525353767444}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Hill Tile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 8359184100619216127}
   - component: {fileID: 4876855460357958490}
   - component: {fileID: 7226840865252024208}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: model
   m_TagString: Untagged
   m_Icon: {fileID: 0}

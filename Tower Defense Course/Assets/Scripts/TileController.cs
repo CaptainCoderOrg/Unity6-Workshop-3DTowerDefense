@@ -9,6 +9,8 @@ public class TileController : MonoBehaviour
     public UnityEvent<TileController> OnCursorEnter;
     [field: SerializeField]
     public UnityEvent<TileController> OnCursorExit;
+    [field: SerializeField]
+    public UnityEvent<TileController> OnCursorClick;
 
     public void NotifyCursorEnter()
     {
@@ -19,16 +21,9 @@ public class TileController : MonoBehaviour
     {
         OnCursorExit.Invoke(this);
     }
+
+    public void NotifyCursorClicked()
+    {
+        OnCursorClick.Invoke(this);
+    }
 }
-
-
-
-
-    // [field: SerializeField]
-    // public UnityEvent<TileController> OnSelected { get; private set; }
-    // public void Select() => OnSelected.Invoke(this);
-
-    // public void TestEvent()
-    // {
-    //     Debug.Log("Test Event!", this);
-    // }
