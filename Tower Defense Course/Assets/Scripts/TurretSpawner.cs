@@ -38,6 +38,7 @@ public class TurretSpawner : MonoBehaviour
     public void SpawnTurret(TileController tileController)
     {
         if (tileController.IsOccupied) { return ;}
+        tileController.IsOccupied = true;
         GameObject newTurret = Instantiate(TurretPrefab);
         newTurret.transform.position = tileController.transform.position;
     }

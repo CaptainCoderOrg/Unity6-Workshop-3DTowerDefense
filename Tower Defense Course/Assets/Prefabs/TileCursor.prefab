@@ -45,9 +45,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4956fb46c73fa454988d1f3861eb435b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <OnSelected>k__BackingField:
-    m_PersistentCalls:
-      m_Calls: []
+  <TargetGrid>k__BackingField: {fileID: 0}
+  <Model>k__BackingField: {fileID: 6898970265452358940}
 --- !u!1001 &6016660902446108749
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -112,5 +111,10 @@ PrefabInstance:
 --- !u!4 &6122010700844201894 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e52d135d5c006dc498e5809401e0657f, type: 3}
+  m_PrefabInstance: {fileID: 6016660902446108749}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6898970265452358940 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: e52d135d5c006dc498e5809401e0657f, type: 3}
   m_PrefabInstance: {fileID: 6016660902446108749}
   m_PrefabAsset: {fileID: 0}
