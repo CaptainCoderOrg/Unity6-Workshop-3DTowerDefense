@@ -10,6 +10,6 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
-        InfoLabel.text = "Click Build to Place a Turret";   
+        InfoLabel.text = string.Empty;   
     }
 }
