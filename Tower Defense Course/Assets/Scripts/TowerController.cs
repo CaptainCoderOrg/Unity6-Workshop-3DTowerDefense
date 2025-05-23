@@ -14,6 +14,7 @@ public class TowerController : MonoBehaviour
     public void ApplyHit(EnemyAttack attack)
     {
         Damage += attack.Damage;
+        attack.OnEnemyAttackedAndDestroyed.Invoke();
         Destroy(attack.gameObject);
         if (Damage >= BaseHealth)
         {
